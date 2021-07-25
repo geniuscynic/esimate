@@ -1,0 +1,28 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: xjjxmm
+
+  # datasource
+  datasource:
+    url: jdbc:mysql://localhost:3306/estimate?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC
+    username: root
+    password: qwqwqw12
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#mybatis-plus
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  #global-config:
+    #db-config:
+      #table-prefix: ms_
+
+
+#log
+logging:
+  level:
+    com.xjjxmm.helloworld: debug
+
+

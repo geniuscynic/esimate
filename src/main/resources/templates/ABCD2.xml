@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="ABCD2" title="ABCD2评分">
+  <Group code="01" title="打掉">
+    <RadioBox code="01" title="年龄是否>60岁" desc="年龄是否>60岁">
+      <Option code="0101" text="是" score="1"/>
+      <Option code="0102" text="否" score="0"/>
+    </RadioBox>
+    <RadioBox code="02" title="血压（mmHg）" desc="血压是否收缩压>140或舒张压>90">
+      <Option code="0201" text="收缩压>140或舒张压>90" score="1"/>
+      <Option code="0202" text="其他" score="0"/>
+    </RadioBox>
+    <CheckBox code="03" title="临床症状" desc="临床症状">
+      <Option code="0301" text="单侧无力" score="1"/>
+      <Option code="0302" text="不伴有无力的言语障碍" score="1"/>
+    </CheckBox>
+    <CheckBox code="04" title="临床症状持续时间" desc="临床症状持续时间">
+      <Option code="0401" text=">60分钟" score="1"/>
+      <Option code="0402" text="10~59分钟" score="1"/>
+    </CheckBox>
+    <RadioBox code="05" title="是否有糖尿病" desc="是否糖尿病">
+      <Option code="0501" text="是" score="1"/>
+      <Option code="0502" text="否" score="0"/>
+    </RadioBox>
+  </Group>
+</Template>
