@@ -13,7 +13,7 @@ import java.io.Serializable
 
     fun update(entity: T): Boolean
 
-    //fun <P: Serializable> getById(id:P) : T
+    //fun <P: Serializable> getByEstimateId(id:P) : T
 
     //fun listByMap(columnMap: Map<String, Any>): Collection<T>?
 }*/
@@ -28,8 +28,8 @@ abstract class BaseResponse<T, M : BaseMapper<T>> : ServiceImpl<M, T>() {
         return this.updateById(entity)
     }*/
 
-   /* override fun <P: Serializable> getById(id: P): T {
-        return baseMapper.getById(id)
+   /* override fun <P: Serializable> getByEstimateId(id: P): T {
+        return baseMapper.getByEstimateId(id)
     }*/
 
    /* override fun listByMap(columnMap: Map<String, Any>): Collection<T>? {

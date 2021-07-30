@@ -3,30 +3,31 @@ package com.xjjxmm.esimate.vo
 
 import org.joda.time.DateTime
 
-class AddEstimateItemVo(
-    var patientId: Int?=null,
-    var rfId : String?=null,
-    var estimatePhase : Int?=null, //1?=null,2?=null,3?=null,4 入院 出院
-    var estimateModule : String?=null, //卒中， 血透
-    var content: String?=null,
-    var createUserId: Long?=null,
 
-    )
 
-class EstimateItemVo(
-   
-    var id : Long?=null,
-    var patientId: Int?=null,
-    var rfId : String?=null,
-    var estimatePhase : Int?=null, //1?=null,2?=null,3?=null,4 入院 出院
-    var content: String?=null,
-    var createTime : DateTime?=null,
-    var createUserId: Long?=null,
-    var updateTime : DateTime?=null,
-    var updateUserId: Long?=null,
+class SelectedEstimateItem {
+    lateinit var code: String
+    lateinit var value: List<String>
+}
 
-    ) {
+class AddEstimateItemVo {
+    var patientId: Long = 0
+    lateinit var code: String
+    //lateinit var rfId: String
+    var estimatePhase: Int = 0 //1?=null,2?=null,3?=null,4 入院 出院
+    lateinit var estimateModule: String //卒中， 血透
+    lateinit var data: List<SelectedEstimateItem>
+    //var createUserId: Long = 0
+}
 
+class EstimateItemVo {
+    var id : Long=0
+    var patientId: Long=0
+    //var rfId : String?=null,
+    var estimatePhase : Int=0 //1?=null,2?=null,3?=null,4 入院 出院
+    lateinit var code: String
+    lateinit var detail: EstimateTemplate
+    //var content: String?=null,
 }
 
 /*

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Template code="ABCD2" title="ABCD2评分">
-  <Group code="01" title="打掉">
+  <Group>
     <RadioBox code="01" title="年龄是否>60岁" desc="年龄是否>60岁">
       <Option code="0101" text="是" score="1"/>
       <Option code="0102" text="否" score="0"/>

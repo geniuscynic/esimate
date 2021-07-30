@@ -3,10 +3,9 @@ package com.xjjxmm.esimate.controller
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.xjjxmm.esimate.service.EstimateItemService
 import com.xjjxmm.esimate.service.EstimateTemplateParseHandler
-import com.xjjxmm.esimate.vo.AddEstimateItemVo
-import com.xjjxmm.esimate.vo.EstimateItemVo
-import com.xjjxmm.esimate.vo.EstimateTemplate
+import com.xjjxmm.esimate.vo.*
 import io.swagger.annotations.Api
+import io.swagger.annotations.ApiOperation
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.core.io.DefaultResourceLoader
@@ -17,6 +16,7 @@ import utity.MappingKit.mapper
 import java.io.BufferedReader
 
 import java.io.InputStreamReader
+import java.lang.annotation.ElementType
 import javax.xml.parsers.DocumentBuilder
 import javax.xml.parsers.DocumentBuilderFactory
 import javax.xml.parsers.SAXParserFactory
@@ -24,7 +24,7 @@ import javax.xml.parsers.SAXParserFactory
 
 @Api(value = "量表",  tags = ["量表测试接口"])
 @RestController
-@RequestMapping("estimate")
+@RequestMapping("api/estimate")
 class EstimateController {
 
     private val log = LoggerFactory.getLogger(this.javaClass)
@@ -32,41 +32,59 @@ class EstimateController {
     @Autowired
     lateinit var estimateItemService : EstimateItemService
 
-    @PostMapping
+    /**
+     * @Description: 获取量表模板
+     * @Param:
+     * @return:
+     * @Author: zjw
+     * @Date: 2021/7/30
+     */
+    @ApiOperation(value = "获取量表模板")
+    @GetMapping("template/{code}")
+    fun getEstimateTemplate(@PathVariable("code")code: String): EstimateTemplate {
+        val entity = estimateItemService.getTemplate( code)
+
+        return entity.mapper()
+    }
+
+    /**
+    * @Description: 新增评分信息
+    * @Param: 量表详情
+    * @return:
+    * @Author: zjw
+    * @Date: 2021/7/30
+    */
+    @ApiOperation(value = "新增评分信息")
+    @PostMapping("add")
     fun add(@RequestBody estimateItem : AddEstimateItemVo) : Long {
         return estimateItemService.add(estimateItem)
     }
 
-    @GetMapping
-    fun getById(id: Long): EstimateItemVo {
-        val entity = estimateItemService.getById(id)
+/**
+* @Description: 查找量表详情
+* @Param:
+* @return:
+* @Author: zjw
+* @Date: 2021/7/30
+*/
+@ApiOperation(value = "查找量表详情")
+@GetMapping("{id}")
+    fun getByEstimateId(@PathVariable id : Long) : EstimateItemVo {
+    return estimateItemService.getByEstimateId(id)
+    }
+
+
+    /*@GetMapping
+    fun getByEstimateId(@PathVariable("id")id: Long): EstimateItemVo {
+        val entity = estimateItemService.getByEstimateId(id)
 
         return entity.mapper()
-    }
+    }*/
 
     @GetMapping("patient/{patientId}")
     fun findByPatientId(@PathVariable("patientId") patientId: Long): List<EstimateItemVo> {
         val entity = estimateItemService.findByPatientId(patientId)
 
         return entity.mapper()
-    }
-
-    @GetMapping("template/{code}")
-    fun getTemplate(code:String) : EstimateTemplate{
-        val resourceLoader: ResourceLoader = DefaultResourceLoader()
-        val inputFile: Resource = resourceLoader.getResource("templates/$code.xml")
-
-        if(!inputFile.exists()) {
-            throw Exception("$code.xml 文件不存在")
-        }
-
-        val sAXParserFactory = SAXParserFactory.newInstance()
-        val sAXParser = sAXParserFactory.newSAXParser()
-
-        val handler = EstimateTemplateParseHandler()
-        sAXParser.parse(inputFile.inputStream, handler)
-
-        return handler.estimateTemplate
-
     }
 }

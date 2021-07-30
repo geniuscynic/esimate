@@ -14,10 +14,10 @@ data class EstimateItemEntity(
     var id : Long?=null,
 
     @TableField(value = "patient_id")
-    var patientId: Int?=null,
+    var patientId: Long?=null,
 
-    @TableField(value = "rf_Id")
-    var rfId : String?=null,
+    //@TableField(value = "rf_Id")
+    //var rfId : String?=null,
 
 
     @TableField(value = "estimate_phase")
@@ -25,6 +25,9 @@ data class EstimateItemEntity(
 
     @TableField(value = "estimate_module")
     var estimateModule : String?=null, //卒中， 血透
+
+    @TableField(value = "template_code")
+    var code: String?=null,
 
     @TableField(value = "content")
     var content: String?=null,
@@ -50,6 +53,7 @@ CREATE TABLE `estimate_item` (
   `rf_id` varchar(45) NOT NULL COMMENT '腕带号',
   `estimate_phase` int NOT NULL COMMENT '评分阶段',
   `estimate_module` varchar(45) NOT NULL COMMENT '所属模块',
+  `template_code` varchar(45) NOT NULL COMMENT '量表名',
   `content` longtext NOT NULL COMMENT '内容',
   `create_Time` datetime NOT NULL,
   `create_User_Id` int NOT NULL,
