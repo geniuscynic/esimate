@@ -1,7 +1,6 @@
 package com.xjjxmm.esimate.vo
 
 
-import org.joda.time.DateTime
 
 
 
@@ -35,7 +34,7 @@ class EstimateItemVo {
 CREATE TABLE `estimate`.`estimate_item` (
 `id` INT NOT NULL AUTO_INCREMENT,
 `patient_Id` INT NOT NULL,
-`rf_Id` VARCHAR(45) NOT NULL,
+`rf_Id` VARCHAR(45) NOT NULL, //暂时注释掉
 `estimate_Num` INT NOT NULL,
 `estimate_Phase` INT NOT NULL,
 `estimate_Module` VARCHAR(45) NOT NULL,
