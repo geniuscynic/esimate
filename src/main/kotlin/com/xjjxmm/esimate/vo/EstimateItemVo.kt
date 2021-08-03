@@ -19,12 +19,18 @@ class AddEstimateItemVo {
     //var createUserId: Long = 0
 }
 
+class EditEstimateItemVo {
+    var id : Long = 0
+    lateinit var data: List<SelectedEstimateItem>
+    //var createUserId: Long = 0
+}
+
 class EstimateItemVo {
     var id : Long=0
     var patientId: Long=0
     //var rfId : String?=null,
     var estimatePhase : Int=0 //1?=null,2?=null,3?=null,4 入院 出院
-    lateinit var code: String
+    //lateinit var code: String
     lateinit var detail: EstimateTemplate
     //var content: String?=null,
 }

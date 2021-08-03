@@ -2,6 +2,7 @@ package com.xjjxmm.esimate.service
 
 import com.xjjxmm.esimate.repository.pojo.EstimateItemEntity
 import com.xjjxmm.esimate.vo.AddEstimateItemVo
+import com.xjjxmm.esimate.vo.EditEstimateItemVo
 import com.xjjxmm.esimate.vo.EstimateItemVo
 import com.xjjxmm.esimate.vo.EstimateTemplate
 
@@ -26,10 +27,19 @@ interface EstimateItemService {
      */
     fun add(estimateItem : AddEstimateItemVo) : Long
 
+    /**
+     * @Description: 修改评分信息
+     * @Param:
+     * @return:
+     * @Author: zjw
+     * @Date: 2021/8/2
+     */
+    fun save(estimateItem: EditEstimateItemVo): Boolean
+
+
     fun getByEstimateId(id : Long) : EstimateItemVo
 
     fun findByPatientId(patientId: Long) : List<EstimateItemVo>
-
 
 
 

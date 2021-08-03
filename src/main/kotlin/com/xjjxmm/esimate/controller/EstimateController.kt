@@ -48,6 +48,19 @@ class EstimateController {
     }
 
     /**
+     * @Description: 查找量表详情
+     * @Param:
+     * @return:
+     * @Author: zjw
+     * @Date: 2021/7/30
+     */
+    @ApiOperation(value = "查找量表详情")
+    @GetMapping("{id}")
+    fun getEstimateDetailById(@PathVariable id : Long) : EstimateItemVo {
+        return estimateItemService.getByEstimateId(id)
+    }
+
+    /**
     * @Description: 新增评分信息
     * @Param: 量表详情
     * @return:
@@ -60,18 +73,20 @@ class EstimateController {
         return estimateItemService.add(estimateItem)
     }
 
-/**
-* @Description: 查找量表详情
-* @Param:
-* @return:
-* @Author: zjw
-* @Date: 2021/7/30
-*/
-@ApiOperation(value = "查找量表详情")
-@GetMapping("{id}")
-    fun getByEstimateId(@PathVariable id : Long) : EstimateItemVo {
-    return estimateItemService.getByEstimateId(id)
+    /**
+    * @Description: 修改评分信息
+    * @Param:
+    * @return:
+    * @Author: zjw
+    * @Date: 2021/8/2
+    */
+    @ApiOperation(value = "修改评分信息")
+    @PostMapping("save")
+    fun save(@RequestBody estimateItem:  EditEstimateItemVo) : Boolean {
+        return estimateItemService.save(estimateItem)
     }
+
+
 
 
     /*@GetMapping

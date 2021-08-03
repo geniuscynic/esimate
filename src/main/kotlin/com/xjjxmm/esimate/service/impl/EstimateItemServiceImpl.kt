@@ -37,7 +37,6 @@ class EstimateItemServiceImpl : EstimateItemService {
             //DateTime.now().
         estimateItemRepository.save(entity)
 
-        log.debug("测试：${entity.id}")
 
         return  when (entity.id == null) {
             true  -> 0
@@ -45,12 +44,21 @@ class EstimateItemServiceImpl : EstimateItemService {
         }
     }
 
+    override fun save(estimateItem: EditEstimateItemVo): Boolean {
+        val entity = estimateItem.mapper<EstimateItemEntity>()
+        entity.updateTime = LocalDateTime.now()
+        entity.updateUserId = 0
+        entity.content = JSON.toJSONString(estimateItem.data)
+
+        return estimateItemRepository.updateById(entity)
+    }
+
     override fun getByEstimateId(id: Long): EstimateItemVo {
         val entity = estimateItemRepository.getById(id)
         val item = entity.mapper<EstimateItemVo>().apply {
 
                 val estmateItems = JSON.parseArray(entity.content, SelectedEstimateItem::class.java)
-                val template = getTemplate(this.code)
+                val template = getTemplate(entity?.code!!)
                 template.setSelectedItems(estmateItems)
 
                 this.detail = template
@@ -84,8 +92,4 @@ class EstimateItemServiceImpl : EstimateItemService {
         return handler.estimateTemplate
 
     }
-
-
-
-
 }

@@ -34,7 +34,7 @@ class WebSecurityConfig : WebSecurityConfigurerAdapter() {
 
         http.authorizeRequests()
             //.antMatchers("/login2").permitAll()
-            .anyRequest().authenticated() //// 允许所有请求通过
+            .anyRequest().permitAll() //// 允许所有请求通过
             .and()
             .formLogin()
             .successHandler(jwtAuthenticationSuccessHandler)
