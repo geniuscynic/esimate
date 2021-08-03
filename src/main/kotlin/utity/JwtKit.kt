@@ -15,16 +15,16 @@ object  JwtKit {
     private const val Issuer = "xjjxmm"
 
     // 携带token的请求头名字
-    val TOKEN_HEADER = "Authorization"
+    const val TOKEN_HEADER = "Authorization"
 
     //token的前缀
-    val TOKEN_PREFIX = "Bearer "
+    const val TOKEN_PREFIX = "Bearer "
 
     // 默认密钥
     private const val DEFAULT_SECRET = "djfdemel"
 
     // 用户身份
-    private val ROLES_CLAIM = "roles"
+    //private val ROLES_CLAIM = "roles"
 
     // token有效期,单位分钟；
     private const val EXPIRE_TIME = 30L

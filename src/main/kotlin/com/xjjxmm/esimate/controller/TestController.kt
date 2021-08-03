@@ -8,6 +8,11 @@ class TestController {
 
     @RequestMapping("/login2")
     fun login() : String {
-        return "login"
+        return "login2"
+    }
+
+    @RequestMapping("/login3")
+    fun login2() : String {
+        return "login3"
     }
 }

@@ -3,6 +3,9 @@ server:
 spring:
   application:
     name: xjjxmm
+  redis:
+    host: localhost
+    port: 6379
 
   # datasource
   datasource:
@@ -36,6 +39,8 @@ token:
   secret: secret
   expiration: 604800
   header: X_Auth_Token
+
+
 
 
 

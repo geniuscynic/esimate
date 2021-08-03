@@ -1,6 +1,7 @@
 package com.xjjxmm.esimate.config.auth
 
 import org.slf4j.LoggerFactory
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.Authentication
 import org.springframework.security.core.GrantedAuthority
@@ -8,12 +9,13 @@ import org.springframework.security.core.authority.AuthorityUtils
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.web.filter.OncePerRequestFilter
 import utity.JwtKit
+import utity.RedisUtil
 import javax.servlet.FilterChain
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
 
-class JWTAuthorizationFilter : OncePerRequestFilter() {
+class JWTAuthorizationFilter(private val redisUtil : RedisUtil) : OncePerRequestFilter() {
 
     private val log = LoggerFactory.getLogger(this.javaClass)
 
@@ -43,12 +45,15 @@ class JWTAuthorizationFilter : OncePerRequestFilter() {
         return header.substring(JwtKit.TOKEN_PREFIX.length).trim()
     }
 
+
+
     // 验证token，并生成认证后的token
     private fun verifyToken(token: String): UsernamePasswordAuthenticationToken {
 
         val claim = JwtKit.parseJwt(token)
         // 提取用户名
         val username: String = claim.id
+        redisUtil.set("user", username, 60)
         // 定义权限列表
         val authorities: MutableList<GrantedAuthority> = AuthorityUtils.commaSeparatedStringToAuthorityList("admin1,normal1")
        /* // 从token提取角色
