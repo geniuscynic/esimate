@@ -8,6 +8,17 @@ import org.springframework.security.core.GrantedAuthority
  * @description 自定义用户类
  * @date 2021/8/1
  */
+class AddUserVo(
+    val userName: String,
+    val password: String,
+    val roles: List<String>
+)
+
+/**
+ * @author zjw
+ * @description 自定义用户类
+ * @date 2021/8/1
+ */
 class UserVo(
     val id:String,
     private val userName: String,
