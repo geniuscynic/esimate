@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="Epworth嗜睡程度评价表" title="Epworth嗜睡程度评价表">
+<Group>
+<RadioBox code="00" title="1.坐着看书时" desc="1.坐着看书时">
+<Option code="00item1" text="从不打瞌睡轻微瞌睡中度瞌睡重度瞌睡" score="0"/>
+</RadioBox>
+<RadioBox code="01" title="2.看电视时" desc="2.看电视时">
+<Option code="00item2" text="从不打瞌睡轻微瞌睡中度瞌睡重度瞌睡" score="0"/>
+</RadioBox>
+<RadioBox code="02" title="3.在公共场所静坐时（例如剧院和会议）" desc="3.在公共场所静坐时（例如剧院和会议）">
+<Option code="00item3" text="从不打瞌睡轻微瞌睡中度瞌睡重度瞌睡" score="0"/>
+</RadioBox>
+<RadioBox code="03" title="4.连续乘车一小时没有休息" desc="4.连续乘车一小时没有休息">
+<Option code="00item4" text="从不打瞌睡轻微瞌睡中度瞌睡重度瞌睡" score="0"/>
+</RadioBox>
+<RadioBox code="04" title="5.如果环境允许的话，午后躺下休息时" desc="5.如果环境允许的话，午后躺下休息时">
+<Option code="00item5" text="从不打瞌睡轻微瞌睡中度瞌睡重度瞌睡" score="0"/>
+</RadioBox>
+<RadioBox code="05" title="6.坐着与别人谈话时" desc="6.坐着与别人谈话时">
+<Option code="00item6" text="从不打瞌睡轻微瞌睡中度瞌睡重度瞌睡" score="0"/>
+</RadioBox>
+<RadioBox code="06" title="7.午饭（不饮酒）后静坐时" desc="7.午饭（不饮酒）后静坐时">
+<Option code="00item7" text="从不打瞌睡轻微瞌睡中度瞌睡重度瞌睡" score="0"/>
+</RadioBox>
+<RadioBox code="07" title="8.乘坐出租车遇到交通阻塞，停车几分钟时" desc="8.乘坐出租车遇到交通阻塞，停车几分钟时">
+<Option code="00item8" text="从不打瞌睡轻微瞌睡中度瞌睡重度瞌睡" score="0"/>
+</RadioBox>
+</Group>
+</Template>

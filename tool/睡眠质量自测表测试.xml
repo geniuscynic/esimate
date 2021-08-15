@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="睡眠质量自测表测试" title="睡眠质量自测表测试">
+<Group>
+<RadioBox code="00" title="1、您的睡眠状况是：（主症）" desc="1、您的睡眠状况是：（主症）">
+<Option code="00question1" text="A.睡眠时常有间断醒或睡而不实，晨醒过早，但不影响工作；B.偶有失眠，但尚能坚持工作；C.睡眠不足4小时，影响正常工作；D.经常不眠，难以坚持正常工作；" score="1"/>
+</RadioBox>
+<RadioBox code="01" title=" 2、您是否有健忘的症状：（次症） " desc=" 2、您是否有健忘的症状：（次症） ">
+<Option code="00question2" text="A.有。偶尔有记忆力减弱B.有。记忆力减弱，但能坚持正常工作和生活C.有。记忆力明显减弱，影响正常工作和生活。D.无" score="1"/>
+</RadioBox>
+<RadioBox code="02" title=" 3．您是否经常有神疲乏力的感觉：（次症） " desc=" 3．您是否经常有神疲乏力的感觉：（次症） ">
+<Option code="00question3" text="A.有。精神不振，可坚持正常工作B.有。精神疲乏，勉强坚持正常工作；C.有。精神极度疲乏，不能坚持正常工作。D.无" score="1"/>
+</RadioBox>
+<RadioBox code="03" title=" 4．您是否经常感觉腰膝酸软：（次症） " desc=" 4．您是否经常感觉腰膝酸软：（次症） ">
+<Option code="00question4" text="A.有。活动后腰膝酸软，可坚持正常工作；B.有。经常出现腰膝酸软，勉强坚持正常工作及生活；C.有。腰膝酸软明显，不能坚持正常工作和生活。D.无" score="1"/>
+</RadioBox>
+<RadioBox code="04" title="5．您是否经常头晕耳鸣：（次症）" desc="5．您是否经常头晕耳鸣：（次症）">
+<Option code="00question5" text="A.有。偶有头晕耳鸣；B.有。经常头晕耳鸣，但能坚持正常工作和生活；C.有。头晕耳鸣明显，影响正常工作和学习。D.无" score="1"/>
+</RadioBox>
+<RadioBox code="05" title=" 6．您是否经常出现气短懒言的状况：（次症）" desc=" 6．您是否经常出现气短懒言的状况：（次症）">
+<Option code="00question6" text="A.有。不喜多言，不问则不答；B.有。懒于言语，多问少答；C.有。不欲言语，呈无欲状。D.无" score="1"/>
+</RadioBox>
+<RadioBox code="06" title="7．您是否有心悸的现象：（次症） " desc="7．您是否有心悸的现象：（次症） ">
+<Option code="00question7" text="A.有。偶有心悸；B.有。经常出现心悸，但能坚持正常工作；C.有。心悸明显，影响正常工作。D.无" score="1"/>
+</RadioBox>
+<RadioBox code="07" title="8．您是否经常感觉心烦：（次症）" desc="8．您是否经常感觉心烦：（次症）">
+<Option code="00question8" text="A.有。有时心烦，自我劝慰后能平静下来；B.有。经常心烦，难以自我劝慰，但休息后可以平静；C.有。心烦意乱明显，影响工作和休息。D.无" score="1"/>
+</RadioBox>
+</Group>
+</Template>

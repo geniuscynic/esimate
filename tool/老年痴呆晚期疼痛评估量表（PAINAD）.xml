@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="老年痴呆晚期疼痛评估量表（PAINAD）" title="老年痴呆晚期疼痛评估量表（PAINAD）">
+<Group>
+<RadioBox code="00" title="1.呼吸" desc="1.呼吸">
+<Option code="00item1" text="正常偶尔呼吸费力或短时间过度通气长时间过度通气或睡眠呼吸暂停综合征" score="0"/>
+</RadioBox>
+<RadioBox code="01" title="2.负性发声" desc="2.负性发声">
+<Option code="00item2" text="没有偶尔小声呻吟大声呻吟，喊叫" score="0"/>
+</RadioBox>
+<RadioBox code="02" title="3.面部表情" desc="3.面部表情">
+<Option code="00item3" text="微笑或无表情悲哀、紧张、皱眉痛苦表情" score="0"/>
+</RadioBox>
+<RadioBox code="03" title="4.形体语言" desc="4.形体语言">
+<Option code="00item4" text="放松紧张、坐立不安握拳、攻击他们" score="0"/>
+</RadioBox>
+<RadioBox code="04" title="5.可安慰程度" desc="5.可安慰程度">
+<Option code="00item5" text="无须安慰可安抚的不能安抚的" score="0"/>
+</RadioBox>
+</Group>
+</Template>

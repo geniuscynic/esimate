@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="蛛网膜下腔出血短期和长期结局评估(FRESH评分)" title="蛛网膜下腔出血短期和长期结局评估(FRESH评分)">
+<Group>
+<Text code="00" title="1.年龄" desc="1.年龄">
+<Option code="00item1" text="(岁)" score=""/>
+</Text>
+<RadioBox code="01" title="2.Hunt&Hess分级" desc="2.Hunt&Hess分级">
+<Option code="00item2" text="未破裂动脉瘤无症状或轻微头痛中至重度头痛、脑膜刺激征、脑神经麻痹嗜睡、意识混浊、轻度局灶神经体征昏迷、中或重度偏瘫、有早期去脑强直或自主神经功能紊乱深昏迷、去大脑强直、濒死状态" score="0"/>
+</RadioBox>
+<Text code="02" title="3.APACHE II的生理评分(不含GCS评分)" desc="3.APACHE II的生理评分(不含GCS评分)">
+<Option code="00item3" text="" score=""/>
+</Text>
+<RadioBox code="03" title="4.动脉瘤再出血" desc="4.动脉瘤再出血">
+<Option code="00item4" text="否是" score="0"/>
+</RadioBox>
+<RadioBox code="04" title="5.蛛网膜下腔出血 WFNS分级" desc="5.蛛网膜下腔出血 WFNS分级">
+<Option code="00item5" text="GCS评分 15分。无神经功能障碍，偏瘫和（或）失语GCS评分 13-14分。无神经功能障碍，偏瘫和（或）失语GCS评分 13-14分。有神经功能障碍，偏瘫和（或）失语GCS评分 8-12分。有或无神经功能障碍，偏瘫和（或）失语GCS评分 3-7分。有或无神经功能障碍，偏瘫和（或）失语" score="1"/>
+</RadioBox>
+<RadioBox code="05" title="7.入院时脑室内出血" desc="7.入院时脑室内出血">
+<Option code="00item6" text="无有" score="0"/>
+</RadioBox>
+</Group>
+</Template>

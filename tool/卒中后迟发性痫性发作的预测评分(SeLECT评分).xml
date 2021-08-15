@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="卒中后迟发性痫性发作的预测评分(SeLECT评分)" title="卒中后迟发性痫性发作的预测评分(SeLECT评分)">
+<Group>
+<RadioBox code="00" title="NIHSS评分" desc="NIHSS评分">
+<Option code="00item1" text="&lt;=34-10≥11" score="0"/>
+</RadioBox>
+<RadioBox code="01" title="大动脉粥样硬化" desc="大动脉粥样硬化">
+<Option code="00item2" text="否是" score="0"/>
+</RadioBox>
+<RadioBox code="02" title="早发痫性发作(<=7天)" desc="早发痫性发作(<=7天)">
+<Option code="00item3" text="否是" score="0"/>
+</RadioBox>
+<RadioBox code="03" title="皮层受累" desc="皮层受累">
+<Option code="00item4" text="否是" score="0"/>
+</RadioBox>
+<RadioBox code="04" title="大脑中动脉受累的区域" desc="大脑中动脉受累的区域">
+<Option code="00item5" text="否是" score="0"/>
+</RadioBox>
+</Group>
+</Template>

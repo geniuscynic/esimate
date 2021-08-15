@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="IScore：缺血性卒中1年预后评估 （IScore : Ischemic Stroke Predictive Risk Score）" title="IScore：缺血性卒中1年预后评估 （IScore : Ischemic Stroke Predictive Risk Score）">
+<Group>
+<Text code="00" title="年龄" desc="年龄">
+<Option code="00item1" text="岁" score="0"/>
+</Text>
+<RadioBox code="01" title="性别:" desc="性别:">
+<Option code="00item2" text="女男" score="0"/>
+</RadioBox>
+<RadioBox code="02" title="卒中严重性（NIHSS）:" desc="卒中严重性（NIHSS）:">
+<Option code="00item3" text="轻度≤8中等9-13严重14-22昏迷&gt;22" score="0"/>
+</RadioBox>
+<RadioBox code="03" title="卒中亚型" desc="卒中亚型">
+<Option code="00item4" text="腔隙性非腔隙性未确定性" score="0"/>
+</RadioBox>
+<CheckBox code="04" title="危险因素" desc="危险因素">
+<Option code="00item5" text="房颤慢性心衰（CHF）心梗（MI）史当前吸烟" score="5"/>
+</CheckBox>
+<CheckBox code="05" title="伴随疾病" desc="伴随疾病">
+<Option code="00item9" text="癌症肾脏透析" score="15"/>
+</CheckBox>
+<RadioBox code="06" title="院前残疾" desc="院前残疾">
+<Option code="00item11" text="生活可自理生活不能自理" score="0"/>
+</RadioBox>
+<RadioBox code="07" title="入院时血糖 mmol/L（mg/dL）" desc="入院时血糖 mmol/L（mg/dL）">
+<Option code="00item12" text="&lt;7.5 mmol/L(&lt;135 mg/dL)≥7.5mmol/L(≥135 mg/dL)" score="0"/>
+</RadioBox>
+</Group>
+</Template>

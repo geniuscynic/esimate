@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="失眠严重程度指数量表(ISI)" title="失眠严重程度指数量表(ISI)">
+<Group>
+<RadioBox code="00" title="1a.入睡困难" desc="1a.入睡困难">
+<Option code="00item1" text="无轻度中度重度极重度" score="0"/>
+</RadioBox>
+<RadioBox code="01" title="1b.维持睡眠困难" desc="1b.维持睡眠困难">
+<Option code="00item2" text="无轻度中度重度极重度" score="0"/>
+</RadioBox>
+<RadioBox code="02" title="1c.早醒" desc="1c.早醒">
+<Option code="00item3" text="无轻度中度重度极重度" score="0"/>
+</RadioBox>
+<RadioBox code="03" title="2.对您当前睡眠模式的满意度" desc="2.对您当前睡眠模式的满意度">
+<Option code="00item4" text="很满意满意一般不满意很不满意" score="0"/>
+</RadioBox>
+<RadioBox code="04" title="3.您认为您的睡眠问题在多大程度上干扰了您的日间功能（如：日间疲劳、处理工作和日常事务的能力、注意力、记忆力、情绪等）：" desc="3.您认为您的睡眠问题在多大程度上干扰了您的日间功能（如：日间疲劳、处理工作和日常事务的能力、注意力、记忆力、情绪等）：">
+<Option code="00item5" text="没有干扰轻微有些较多很多干扰" score="0"/>
+</RadioBox>
+<RadioBox code="05" title="4.与其他人相比，您的失眠问题对您的生活质量有多大程度的影响或损害：" desc="4.与其他人相比，您的失眠问题对您的生活质量有多大程度的影响或损害：">
+<Option code="00item6" text="没有一点有些较多很多" score="0"/>
+</RadioBox>
+<RadioBox code="06" title="5.您对自己当前睡眠问题有多大程度的担忧/沮丧：" desc="5.您对自己当前睡眠问题有多大程度的担忧/沮丧：">
+<Option code="00item7" text="没有一点有些较多很多" score="0"/>
+</RadioBox>
+</Group>
+</Template>

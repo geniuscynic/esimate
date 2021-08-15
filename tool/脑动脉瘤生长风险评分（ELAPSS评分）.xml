@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="脑动脉瘤生长风险评分（ELAPSS评分）" title="脑动脉瘤生长风险评分（ELAPSS评分）">
+<Group>
+<RadioBox code="00" title="1.以前有蛛网膜下腔出血吗？" desc="1.以前有蛛网膜下腔出血吗？">
+<Option code="00item1" text="有无" score="0"/>
+</RadioBox>
+<RadioBox code="01" title="2.动脉瘤的位置" desc="2.动脉瘤的位置">
+<Option code="00item2" text="颈内动脉/大脑前动脉/前交通动脉(ICA/ACA/ACOM)大脑中动脉(MCA)后交通动脉/后循环(PCOM/Posterior circulation)" score="0"/>
+</RadioBox>
+<RadioBox code="02" title="3.年龄(岁)？ " desc="3.年龄(岁)？ ">
+<Option code="00item3" text="≤6061–6566–7071–7576–8081–8586–9091–95&gt;95" score="0"/>
+</RadioBox>
+<RadioBox code="03" title="4.所在国家 " desc="4.所在国家 ">
+<Option code="00item4" text="北美，中国，欧洲(除芬兰外)日本芬兰" score="0"/>
+</RadioBox>
+<RadioBox code="04" title="5.动脉瘤大小(mm)" desc="5.动脉瘤大小(mm)">
+<Option code="00item5" text="1.0–2.93.0–4.95.0–6.97.0–9.9≥10.0" score="0"/>
+</RadioBox>
+<RadioBox code="05" title="6.动脉瘤形状" desc="6.动脉瘤形状">
+<Option code="00item6" text="规则不规则" score="0"/>
+</RadioBox>
+</Group>
+</Template>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="巴氏生活功能量表/巴氏指数" title="巴氏生活功能量表/巴氏指数">
+<Group>
+<RadioBox code="00" title=" 1.进食" desc=" 1.进食">
+<Option code="00item1" text="自己在合理时间(约十秒钟吃一口)可用筷子取食眼前的食物。若需进食辅具时，应会自行穿脱。需别人帮忙穿脱辅具或只会用汤匙进食无法自行取食或耗费时间过长" score="10"/>
+</RadioBox>
+<RadioBox code="01" title="2.个人卫生" desc="2.个人卫生">
+<Option code="00item2" text="可以自行洗手、刷牙、洗脸及梳头需要他人部份或完全协助" score="5"/>
+</RadioBox>
+<RadioBox code="02" title="3.上厕所" desc="3.上厕所">
+<Option code="00item3" text="可自行上下马桶、穿脱衣服、不弄脏衣服、会自行使用卫生纸擦拭需要协助保持姿势的平衡、整理衣服或用卫生纸无法自己完成" score="10"/>
+</RadioBox>
+<RadioBox code="03" title="4.洗澡" desc="4.洗澡">
+<Option code="00item4" text="能独立完成(不论是盆浴或沐浴)，不需别人在旁需别人协助" score="5"/>
+</RadioBox>
+<RadioBox code="04" title="5.穿脱衣服" desc="5.穿脱衣服">
+<Option code="00item5" text="能自己穿脱衣服、鞋子，自己扣釦子、上拉鍊或绑鞋带在别人协助下，可自己完成一半以上的动作不会自己做" score="10"/>
+</RadioBox>
+<RadioBox code="05" title="6.大便控制" desc="6.大便控制">
+<Option code="00item6" text="不会失禁，能自行灌肠或使用塞剂偶尔会失禁(每周不超过一次)，需要他人协助使用灌肠或塞剂失禁，无法自己控制且需他人处理。" score="10"/>
+</RadioBox>
+<RadioBox code="06" title="7.小便控制" desc="7.小便控制">
+<Option code="00item7" text="能自己控制不会有失禁，或能自行使用并清洁尿套、尿袋偶尔会失禁(每周不超过一次)或尿急(无法等待放好变盆或及时赶到厕所)或需要他人协助处理尿套、尿袋失禁，无法自己控制且需他人处理" score="10"/>
+</RadioBox>
+<RadioBox code="07" title="8.平地行走" desc="8.平地行走">
+<Option code="00item8" text="使用或不使用辅具，皆可独立行走50米以上需他人稍微扶持或口头指导才能行走50米以上虽无法行走，但可以操作轮椅(包括转弯、进门及接近桌子、床沿)并可推行轮椅50米以上完全无法自行行走，需别人帮忙推轮椅" score="15"/>
+</RadioBox>
+<RadioBox code="08" title="9.上下楼梯" desc="9.上下楼梯">
+<Option code="00item9" text="可自行上下楼梯，可使用扶手、柺杖等辅具需他人协助或监督才能上下楼梯无法上下楼梯" score="10"/>
+</RadioBox>
+<RadioBox code="09" title="10.上下床或椅子" desc="10.上下床或椅子">
+<Option code="00item10" text="整个过程可独立完成移动身体时需要稍微协助、给予提醒、安全监督可以自行坐起，但从床上坐起时或移动身体时需要他人协助不会自己移动" score="15"/>
+</RadioBox>
+</Group>
+</Template>

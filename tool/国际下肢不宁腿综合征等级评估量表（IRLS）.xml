@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="国际下肢不宁腿综合征等级评估量表（IRLS）" title="国际下肢不宁腿综合征等级评估量表（IRLS）">
+<Group>
+<RadioBox code="00" title="1. 您对下肢或上肢不舒适症状严重程度的总体评价是？" desc="1. 您对下肢或上肢不舒适症状严重程度的总体评价是？">
+<Option code="00item1" text="非常重重度中度轻度无" score="4"/>
+</RadioBox>
+<RadioBox code="01" title="2.出现下肢不宁腿综合征的症状时您渴望活动的需求有多强烈" desc="2.出现下肢不宁腿综合征的症状时您渴望活动的需求有多强烈">
+<Option code="00item2" text="非常强烈强烈较强烈一般无" score="4"/>
+</RadioBox>
+<RadioBox code="02" title="3.活动后您下肢或上肢的症状能缓解多少？" desc="3.活动后您下肢或上肢的症状能缓解多少？">
+<Option code="00item3" text="无缓解轻度缓解中度缓解轻度无" score="4"/>
+</RadioBox>
+<RadioBox code="03" title="4.因为下肢不宁综合征您的睡眠受到影响有多严重？" desc="4.因为下肢不宁综合征您的睡眠受到影响有多严重？">
+<Option code="00item4" text="非常重重度中度轻度无" score="4"/>
+</RadioBox>
+<RadioBox code="04" title="5.因为下肢不宁综合征您感到疲劳或困倦的症状有多严重？" desc="5.因为下肢不宁综合征您感到疲劳或困倦的症状有多严重？">
+<Option code="00item5" text="非常重重度中度轻度无" score="4"/>
+</RadioBox>
+<RadioBox code="05" title="6.总的来说您认为您的下肢不宁综合征病情有多重？" desc="6.总的来说您认为您的下肢不宁综合征病情有多重？">
+<Option code="00item6" text="非常重重度中度轻度无" score="4"/>
+</RadioBox>
+<RadioBox code="06" title="7.您下肢不宁综合征发作频率如何？" desc="7.您下肢不宁综合征发作频率如何？">
+<Option code="00item7" text="很经常（每周6-7d）经常（每周4-5d）有时（每周2-3d）偶尔（每周=1d）无" score="4"/>
+</RadioBox>
+<RadioBox code="07" title="8.出现下肢不宁综合征症状时平均持续时间有多长？" desc="8.出现下肢不宁综合征症状时平均持续时间有多长？">
+<Option code="00item8" text="非常长（=8h/24h）长（3-8h/24h）较长（1-3h/24h）短(1h/24h）无" score="4"/>
+</RadioBox>
+<RadioBox code="08" title="9.下肢不宁综合征对您日常生活和工作（如家庭生活、家务劳动、社会活动以及工作影响）的严重程度？" desc="9.下肢不宁综合征对您日常生活和工作（如家庭生活、家务劳动、社会活动以及工作影响）的严重程度？">
+<Option code="00item9" text="非常重重度中度轻度无" score="4"/>
+</RadioBox>
+<RadioBox code="09" title="10.下肢不宁综合征的症状对您的情绪（如气愤、抑郁、沮丧、焦虑和易怒），影响的严重程度？" desc="10.下肢不宁综合征的症状对您的情绪（如气愤、抑郁、沮丧、焦虑和易怒），影响的严重程度？">
+<Option code="00item10" text="非常重重度中度轻度无" score="4"/>
+</RadioBox>
+</Group>
+</Template>

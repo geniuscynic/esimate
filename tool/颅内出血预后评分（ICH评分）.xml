@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="颅内出血预后评分（ICH评分）" title="颅内出血预后评分（ICH评分）">
+<Group>
+<RadioBox code="00" title=" 1.年龄（岁） " desc=" 1.年龄（岁） ">
+<Option code="00item1" text="&lt;80≥80" score="0"/>
+</RadioBox>
+<RadioBox code="01" title="2.GCS评分" desc="2.GCS评分">
+<Option code="00item2" text="3-45-1213-15" score="2"/>
+</RadioBox>
+<RadioBox code="02" title="3.颅内脑叶出血量(mL)" desc="3.颅内脑叶出血量(mL)">
+<Option code="00item3" text="脑叶出血 ≥30mL脑叶出血 &lt;30mL" score="1"/>
+</RadioBox>
+<RadioBox code="03" title="4.血肿破入脑室" desc="4.血肿破入脑室">
+<Option code="00item4" text="是否" score="1"/>
+</RadioBox>
+<RadioBox code="04" title="5.血肿源自幕下" desc="5.血肿源自幕下">
+<Option code="00item5" text="是否" score="1"/>
+</RadioBox>
+</Group>
+</Template>

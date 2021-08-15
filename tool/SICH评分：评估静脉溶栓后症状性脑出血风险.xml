@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="SICH评分：评估静脉溶栓后症状性脑出血风险(SITS Symptomatic Intracerebral Hemorrhage Risk Score)" title="SICH评分：评估静脉溶栓后症状性脑出血风险(SITS Symptomatic Intracerebral Hemorrhage Risk Score)">
+<Group>
+<CheckBox code="00" title="阿司匹林+氯吡格雷?" desc="阿司匹林+氯吡格雷?">
+<Option code="00item1" text="是" score="3"/>
+</CheckBox>
+<CheckBox code="01" title="单用阿司匹林?" desc="单用阿司匹林?">
+<Option code="00item2" text="是" score="2"/>
+</CheckBox>
+<CheckBox code="02" title="NIHSS≥13?" desc="NIHSS≥13?">
+<Option code="00item3" text="是" score="2"/>
+</CheckBox>
+<CheckBox code="03" title="NIHSS 7-12?" desc="NIHSS 7-12?">
+<Option code="00item4" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="04" title="血糖≥180mg/dl（10 mmol/L）?" desc="血糖≥180mg/dl（10 mmol/L）?">
+<Option code="00item5" text="是" score="2"/>
+</CheckBox>
+<CheckBox code="05" title="年龄≥72岁?" desc="年龄≥72岁?">
+<Option code="00item6" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="06" title="收缩压≥146mmHg?" desc="收缩压≥146mmHg?">
+<Option code="00item7" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="07" title="体重≥95kg?" desc="体重≥95kg?">
+<Option code="00item8" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="08" title="发病到治疗时间≥180min?" desc="发病到治疗时间≥180min?">
+<Option code="00item9" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="09" title="高血压病史?" desc="高血压病史?">
+<Option code="00item10" text="是" score="1"/>
+</CheckBox>
+</Group>
+</Template>

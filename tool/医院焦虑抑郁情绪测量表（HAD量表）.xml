@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="医院焦虑抑郁情绪测量表（HAD量表）" title="医院焦虑抑郁情绪测量表（HAD量表）">
+<Group>
+<RadioBox code="00" title="1.我感到紧张（或痛苦）" desc="1.我感到紧张（或痛苦）">
+<Option code="00item1" text="几乎所有时候大多时候有时候根本没有" score="3"/>
+</RadioBox>
+<RadioBox code="01" title="2.我对以往感兴趣的事情还是有兴趣" desc="2.我对以往感兴趣的事情还是有兴趣">
+<Option code="00item2" text="肯定一样不像以前那样多只有一点基本上没有了" score="0"/>
+</RadioBox>
+<RadioBox code="02" title="3.我感到有些害怕，好像预感到有什么可怕的事情要发生" desc="3.我感到有些害怕，好像预感到有什么可怕的事情要发生">
+<Option code="00item3" text="非常肯定和十分严重是的，但并不太严重有一点，但并不使我苦恼根本没有" score="3"/>
+</RadioBox>
+<RadioBox code="03" title="4.我能够哈哈大笑，并看到事物有趣的一面" desc="4.我能够哈哈大笑，并看到事物有趣的一面">
+<Option code="00item4" text="我经常这样我现在已经不大这样了现在肯定是不太多了根本没有" score="0"/>
+</RadioBox>
+<RadioBox code="04" title="5.我心中充满烦恼" desc="5.我心中充满烦恼">
+<Option code="00item5" text="大多数时间常常如此时时，但并不经常偶然如此" score="3"/>
+</RadioBox>
+<RadioBox code="05" title="6.我感到愉快" desc="6.我感到愉快">
+<Option code="00item6" text="根本没并不经常这样有时大多数时间" score="3"/>
+</RadioBox>
+<RadioBox code="06" title="7.我能够安闲而轻松地坐着" desc="7.我能够安闲而轻松地坐着">
+<Option code="00item7" text="肯定经常并不经常根本没有" score="0"/>
+</RadioBox>
+<RadioBox code="07" title="8.我感到人好像变迟钝了" desc="8.我感到人好像变迟钝了">
+<Option code="00item8" text="几乎所有时间很经常有时根本没有" score="3"/>
+</RadioBox>
+<RadioBox code="08" title="9.我感到一种令人发抖的恐惧" desc="9.我感到一种令人发抖的恐惧">
+<Option code="00item9" text="根本没有很正常有时非常经常" score="0"/>
+</RadioBox>
+<RadioBox code="09" title="10.我对自己的外表（打扮自己）失去兴趣" desc="10.我对自己的外表（打扮自己）失去兴趣">
+<Option code="00item10" text="肯定经常并不经常根本没有" score="3"/>
+</RadioBox>
+<RadioBox code="10" title="11.我有点坐立不安，好像感到非要活动不可" desc="11.我有点坐立不安，好像感到非要活动不可">
+<Option code="00item11" text="确实非常多是不少并不多根本没有" score="3"/>
+</RadioBox>
+<RadioBox code="11" title="12.我怀着愉快的心情憧憬未来" desc="12.我怀着愉快的心情憧憬未来">
+<Option code="00item12" text="差不多是这样做并不完全是这样做的很少这样做几乎从来不这样做" score="0"/>
+</RadioBox>
+<RadioBox code="12" title="13.我突然有恐惧感" desc="13.我突然有恐惧感">
+<Option code="00item13" text="确实很经常时常并非经常根本没有" score="3"/>
+</RadioBox>
+<RadioBox code="13" title="14.我能欣赏一本好书或一项好的广播或电视节目" desc="14.我能欣赏一本好书或一项好的广播或电视节目">
+<Option code="00item14" text="常常有时并非经常很少" score="0"/>
+</RadioBox>
+</Group>
+</Template>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="中枢敏化测评量表（CSI）" title="中枢敏化测评量表（CSI）">
+<Group>
+<RadioBox code="00" title="1.从梦中醒来后感觉疲惫且没精神" desc="1.从梦中醒来后感觉疲惫且没精神">
+<Option code="00item1" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="01" title="2.感觉肌肉僵硬且疼痛" desc="2.感觉肌肉僵硬且疼痛">
+<Option code="00item2" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="02" title="3.有焦虑症状" desc="3.有焦虑症状">
+<Option code="00item3" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="03" title="4.会咬紧牙关" desc="4.会咬紧牙关">
+<Option code="00item4" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="04" title="5.有腹泻和或便秘问题 " desc="5.有腹泻和或便秘问题 ">
+<Option code="00item5" text="从不很少有时经常总是" score="4"/>
+</RadioBox>
+<RadioBox code="05" title="6.在日常行动中需要帮助" desc="6.在日常行动中需要帮助">
+<Option code="00item6" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="06" title="7.对强光敏感" desc="7.对强光敏感">
+<Option code="00item7" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="07" title="8.在活动时很容易疲惫 " desc="8.在活动时很容易疲惫 ">
+<Option code="00item8" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="08" title="9.感觉浑身疼痛" desc="9.感觉浑身疼痛">
+<Option code="00item9" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="09" title="10.有头痛" desc="10.有头痛">
+<Option code="00item10" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="10" title="11.小便时感到膀胱不适或有烧灼感 " desc="11.小便时感到膀胱不适或有烧灼感 ">
+<Option code="00item11" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="11" title="12.睡不好觉 " desc="12.睡不好觉 ">
+<Option code="00item12" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="12" title="13.很难集中注意力" desc="13.很难集中注意力">
+<Option code="00item13" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="13" title="14.有皮肤问题，如干燥、瘙痒或皮疹" desc="14.有皮肤问题，如干燥、瘙痒或皮疹">
+<Option code="00item14" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="14" title="15.压力使我的身体症状恶化" desc="15.压力使我的身体症状恶化">
+<Option code="00item15" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="15" title="16.感到悲伤或沮丧" desc="16.感到悲伤或沮丧">
+<Option code="00item16" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="16" title="17.有气无力 " desc="17.有气无力 ">
+<Option code="00item17" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="17" title="18.颈和肩部肌肉紧张" desc="18.颈和肩部肌肉紧张">
+<Option code="00item18" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="18" title="19.下巴疼 " desc="19.下巴疼 ">
+<Option code="00item19" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="19" title="20.一些气味，如香水，会使我感到头晕和恶心 " desc="20.一些气味，如香水，会使我感到头晕和恶心 ">
+<Option code="00item20" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="20" title="21.尿频 " desc="21.尿频 ">
+<Option code="00item21" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="21" title="22.晚上睡觉时，腿部会感到不舒适" desc="22.晚上睡觉时，腿部会感到不舒适">
+<Option code="00item22" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="22" title="23.记性差" desc="23.记性差">
+<Option code="00item23" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="23" title="24.小时候受过创伤" desc="24.小时候受过创伤">
+<Option code="00item24" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="24" title="25.盆骨区域疼痛" desc="25.盆骨区域疼痛">
+<Option code="00item25" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="25" title="1.腿不安综合症" desc="1.腿不安综合症">
+<Option code="00item26" text="是否" score="1"/>
+</RadioBox>
+<RadioBox code="26" title="2.慢性疲劳综合征" desc="2.慢性疲劳综合征">
+<Option code="00item27" text="是否" score="1"/>
+</RadioBox>
+<RadioBox code="27" title="3.纤维肌痛" desc="3.纤维肌痛">
+<Option code="00item28" text="是否" score="1"/>
+</RadioBox>
+<RadioBox code="28" title="4.颞下颌关节疾病（TMJ）" desc="4.颞下颌关节疾病（TMJ）">
+<Option code="00item29" text="是否" score="1"/>
+</RadioBox>
+<RadioBox code="29" title="5.偏头痛或紧张性头痛" desc="5.偏头痛或紧张性头痛">
+<Option code="00item30" text="是否" score="1"/>
+</RadioBox>
+<RadioBox code="30" title="6.肠易激惹综合征（IBS）" desc="6.肠易激惹综合征（IBS）">
+<Option code="00item31" text="是否" score="1"/>
+</RadioBox>
+<RadioBox code="31" title="7.多种化学敏感性" desc="7.多种化学敏感性">
+<Option code="00item32" text="是否" score="1"/>
+</RadioBox>
+<RadioBox code="32" title="8.颈部受伤（包括鞭打）" desc="8.颈部受伤（包括鞭打）">
+<Option code="00item33" text="是否" score="1"/>
+</RadioBox>
+<RadioBox code="33" title="9.焦虑或惊恐发作" desc="9.焦虑或惊恐发作">
+<Option code="00item34" text="是否" score="1"/>
+</RadioBox>
+<RadioBox code="34" title="10.抑郁症" desc="10.抑郁症">
+<Option code="00item35" text="是否" score="1"/>
+</RadioBox>
+</Group>
+</Template>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="改良的Well评分：评估深静脉血栓（DVT）风险" title="改良的Well评分：评估深静脉血栓（DVT）风险">
+<Group>
+<CheckBox code="00" title="癌症活动期（近6个月内接受治疗或当前姑息治疗）?" desc="癌症活动期（近6个月内接受治疗或当前姑息治疗）?">
+<Option code="00cancer" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="01" title="偏瘫，轻瘫或最近下肢石膏固定?" desc="偏瘫，轻瘫或最近下肢石膏固定?">
+<Option code="00bed" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="02" title="近期卧床≥3天或近12周内行大手术（全麻或局麻）?" desc="近期卧床≥3天或近12周内行大手术（全麻或局麻）?">
+<Option code="00calf" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="03" title="沿深静脉走行有局限性压痛?" desc="沿深静脉走行有局限性压痛?">
+<Option code="00collateral" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="04" title="整个下肢肿胀?" desc="整个下肢肿胀?">
+<Option code="00entireleg" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="05" title="肿胀小腿周径至少大于无症状侧3cm（胫骨粗隆下10cm测量）?" desc="肿胀小腿周径至少大于无症状侧3cm（胫骨粗隆下10cm测量）?">
+<Option code="00local" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="06" title="凹陷性水肿（仅症状腿）?" desc="凹陷性水肿（仅症状腿）?">
+<Option code="00edema" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="07" title="浅静脉侧支（非静脉曲张）?" desc="浅静脉侧支（非静脉曲张）?">
+<Option code="00paralysis" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="08" title="既往DVT史?" desc="既往DVT史?">
+<Option code="00prevdvt" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="09" title="至少可能和DVT相当的其他病因诊断*?" desc="至少可能和DVT相当的其他病因诊断*?">
+<Option code="00alt" text="是" score="-2"/>
+</CheckBox>
+<button code="10" title="以上全无" desc="以上全无">
+<Option code="00noneofthese" text="" score="全不选"/>
+</button>
+</Group>
+</Template>

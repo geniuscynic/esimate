@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="肌力分级(MRC)" title="肌力分级(MRC)">
+<Group>
+<RadioBox code="00" title="完全瘫痪" desc="完全瘫痪">
+<Option code="00ccr" text="" score="0"/>
+</RadioBox>
+<RadioBox code="01" title="可见或可触及肌肉收缩，但不引起关节活动" desc="可见或可触及肌肉收缩，但不引起关节活动">
+<Option code="00ccr" text="" score="1"/>
+</RadioBox>
+<RadioBox code="02" title="去除重力后可进行关节全范围主动运动" desc="去除重力后可进行关节全范围主动运动">
+<Option code="00ccr" text="" score="2"/>
+</RadioBox>
+<RadioBox code="03" title="可以克服重力进行关节全范围主动运动，但不能对抗阻力" desc="可以克服重力进行关节全范围主动运动，但不能对抗阻力">
+<Option code="00ccr" text="" score="3"/>
+</RadioBox>
+<RadioBox code="04" title="可以克服重力进行关节全范围主动运动，且能对抗一定阻力" desc="可以克服重力进行关节全范围主动运动，且能对抗一定阻力">
+<Option code="00ccr" text="" score="4"/>
+</RadioBox>
+<RadioBox code="05" title="可以克服重力进行关节全范围主动运动，且能充分对抗阻力" desc="可以克服重力进行关节全范围主动运动，且能充分对抗阻力">
+<Option code="00ccr" text="" score="5"/>
+</RadioBox>
+<RadioBox code="06" title="根据检查者判断，能对抗充分大的阻力做主动运动且不存在明确的抑制性因素则可以认为是正常的" desc="根据检查者判断，能对抗充分大的阻力做主动运动且不存在明确的抑制性因素则可以认为是正常的">
+<Option code="00ccr" text="" score="6"/>
+</RadioBox>
+</Group>
+</Template>

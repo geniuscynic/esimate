@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="阿普加评分" title="阿普加评分">
+<Group>
+<RadioBox code="00" title="活动/肌张力" desc="活动/肌张力">
+<Option code="00activity" text="活跃+2四肢略屈曲+1无力+0" score="2"/>
+</RadioBox>
+<RadioBox code="01" title="脉搏" desc="脉搏">
+<Option code="00pulse" text="&gt;e;100 BPM+2&lt;100 BPM+1无+0" score="2"/>
+</RadioBox>
+<RadioBox code="02" title="皱眉或其他痛苦表情" desc="皱眉或其他痛苦表情">
+<Option code="00grim" text="喷嚏/咳嗽+2皱眉或其他痛苦表情+1无反应+0" score="2"/>
+</RadioBox>
+<RadioBox code="03" title="外貌/皮肤颜色" desc="外貌/皮肤颜色">
+<Option code="00color" text="全身粉红+2身体红，四肢青紫+1青紫/苍白+0" score="2"/>
+</RadioBox>
+<RadioBox code="04" title="呼吸" desc="呼吸">
+<Option code="00resp" text="好/哭泣响+2不规则/慢+1无+0" score="2"/>
+</RadioBox>
+</Group>
+</Template>

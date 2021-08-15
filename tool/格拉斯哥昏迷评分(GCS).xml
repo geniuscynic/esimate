@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="格拉斯哥昏迷评分" title="格拉斯哥昏迷评分">
+<Group>
+<RadioBox code="00" title="睁眼能力" desc="睁眼能力">
+<Option code="00activity" text="无法评价（外伤、水肿等）(C)自主睁眼+4语言吩咐睁眼+3疼痛刺激睁眼+2无睁眼+1" score="-1"/>
+</RadioBox>
+<RadioBox code="01" title="回答问题的能力" desc="回答问题的能力">
+<Option code="00verbal" text="气管插管(T)正常+5言语混乱+4不恰当言语+3无发音+1不能理解的发音+2" score="-1"/>
+</RadioBox>
+<RadioBox code="02" title="肢体运动反应" desc="肢体运动反应">
+<Option code="00motor" text="完成指令动作+6对疼痛刺激定位反应+5对疼痛刺激屈曲反应+4疼痛刺激异常屈曲+3疼痛刺激异常伸展+2无反应+1" score="6"/>
+</RadioBox>
+</Group>
+</Template>

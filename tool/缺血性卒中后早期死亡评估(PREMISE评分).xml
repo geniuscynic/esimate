@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="缺血性卒中后早期死亡评估(PREMISE评分)" title="缺血性卒中后早期死亡评估(PREMISE评分)">
+<Group>
+<RadioBox code="00" title="1. 年龄 " desc="1. 年龄 ">
+<Option code="00item1" text="&lt;60岁60-69岁&gt;=70岁" score="0"/>
+</RadioBox>
+<RadioBox code="01" title="2. mRS评分 " desc="2. mRS评分 ">
+<Option code="00item2" text="0分1-5分" score="0"/>
+</RadioBox>
+<RadioBox code="02" title="3.NIHSS评分" desc="3.NIHSS评分">
+<Option code="00item3" text="&lt;5分5-11分12-23分&gt;=24分" score="0"/>
+</RadioBox>
+<RadioBox code="03" title="4.有无糖尿病" desc="4.有无糖尿病">
+<Option code="00item4" text="无有" score="0"/>
+</RadioBox>
+<RadioBox code="04" title="5.有无心脏疾病(包括冠脉疾病，心衰，心肌病，瓣膜病)" desc="5.有无心脏疾病(包括冠脉疾病，心衰，心肌病，瓣膜病)">
+<Option code="00item5" text="否是" score="0"/>
+</RadioBox>
+<RadioBox code="05" title="6.临床卒中症状(后循环综合征)" desc="6.临床卒中症状(后循环综合征)">
+<Option code="00item6" text="无有" score="0"/>
+</RadioBox>
+<RadioBox code="06" title="7.卒中形式" desc="7.卒中形式">
+<Option code="00item7" text="腔隙性卒中非腔隙性卒中" score="0"/>
+</RadioBox>
+</Group>
+</Template>

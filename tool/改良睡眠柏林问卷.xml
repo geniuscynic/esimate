@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="改良睡眠柏林问卷" title="改良睡眠柏林问卷">
+<Group>
+<RadioBox code="00" title=" 1.您睡觉打呼噜吗？(最好问家人或同屋的人) " desc=" 1.您睡觉打呼噜吗？(最好问家人或同屋的人) ">
+<Option code="00item1" text="是否不知道" score="1"/>
+</RadioBox>
+<RadioBox code="01" title="2.如果您睡觉打呼噜，您的鼾声有多响亮？" desc="2.如果您睡觉打呼噜，您的鼾声有多响亮？">
+<Option code="00item2" text="比正常呼吸时响同说话是一样声响比说话时更响非常响，其他房间都能听到不知道" score="0"/>
+</RadioBox>
+<RadioBox code="02" title="3.您打呼噜的次数多吗？" desc="3.您打呼噜的次数多吗？">
+<Option code="00item3" text="几乎每天一周3~4次一周1~2次·一个月1~2次没有或几乎没有/不知道" score="1"/>
+</RadioBox>
+<RadioBox code="03" title="4.您的鼾声影响其他人吗？" desc="4.您的鼾声影响其他人吗？">
+<Option code="00item4" text="是的不影响不知道" score="1"/>
+</RadioBox>
+<RadioBox code="04" title="5.在您睡觉时，是否有突然憋醒，无法呼吸的情况？" desc="5.在您睡觉时，是否有突然憋醒，无法呼吸的情况？">
+<Option code="00item5" text="几乎每天都有一周3~4次一周1~2次一个月1~2次没有或几乎没有/不知道" score="2"/>
+</RadioBox>
+<RadioBox code="05" title="6.您早晨醒来后感觉疲乏吗？" desc="6.您早晨醒来后感觉疲乏吗？">
+<Option code="00item6" text="几乎每天都有一周3~4次一周1~2次一个月1~2次没有或几乎没有/不知道" score="1"/>
+</RadioBox>
+<RadioBox code="06" title="7.在白天清醒的情况下，您还会有疲劳和乏力吗？" desc="7.在白天清醒的情况下，您还会有疲劳和乏力吗？">
+<Option code="00item7" text="几乎每天都有一周3~4次一周1~2次一个月1~2次没有或几乎没有/不知道" score="1"/>
+</RadioBox>
+<RadioBox code="07" title="8.在医院排队就诊等候中、排除付水电煤气费、在家坐看电视时会睡着吗？" desc="8.在医院排队就诊等候中、排除付水电煤气费、在家坐看电视时会睡着吗？">
+<Option code="00item8" text="是否不知道/拒绝回答" score="1"/>
+</RadioBox>
+<RadioBox code="08" title="9.如果有，频率是多少？" desc="9.如果有，频率是多少？">
+<Option code="00item9" text="几乎每天一周3~4次一周1~2次一个月1~2次没有或几乎没有/不知道" score="1"/>
+</RadioBox>
+<RadioBox code="09" title="10.您有高血压吗？" desc="10.您有高血压吗？">
+<Option code="00item10" text="是不是不知道/拒绝回答" score="1"/>
+</RadioBox>
+<RadioBox code="10" title="11.BMI>=25kg/m2？" desc="11.BMI>=25kg/m2？">
+<Option code="00item11" text="是不是不知道/拒绝回答" score="1"/>
+</RadioBox>
+</Group>
+</Template>

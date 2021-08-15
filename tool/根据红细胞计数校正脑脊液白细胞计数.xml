@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="根据红细胞计数校正脑脊液白细胞计数" title="根据红细胞计数校正脑脊液白细胞计数">
+<Group>
+<Text code="00" title="检测到的脑脊液白细胞计数" desc="检测到的脑脊液白细胞计数">
+<Option code="00csfwbc" text="cells/µL" score="0"/>
+</Text>
+<Text code="01" title="脑脊液红细胞计数" desc="脑脊液红细胞计数">
+<Option code="00csfr" text="cells/µL" score="0"/>
+</Text>
+<Text code="02" title="血白细胞计数" desc="血白细胞计数">
+<Option code="00blwbc" text="cells/µL" score="0"/>
+</Text>
+<Text code="03" title="血红细胞计数" desc="血红细胞计数">
+<Option code="00blr" text="cells/µL" score="0"/>
+</Text>
+</Group>
+</Template>

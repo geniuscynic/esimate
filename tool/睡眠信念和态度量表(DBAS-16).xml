@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="睡眠信念和态度量表(DBAS-16)" title="睡眠信念和态度量表(DBAS-16)">
+<Group>
+<RadioBox code="00" title="1. 我需要睡足8小时，白天才能够精力充沛和活动良好" desc="1. 我需要睡足8小时，白天才能够精力充沛和活动良好">
+<Option code="00item1" text="非常同意同意一般不同意非常不同意" score="1"/>
+</RadioBox>
+<RadioBox code="01" title="2.当我一个晚上没有睡到足够的时间，我需要在第二天午睡或打盹，或晚上睡更长的时间" desc="2.当我一个晚上没有睡到足够的时间，我需要在第二天午睡或打盹，或晚上睡更长的时间">
+<Option code="00item2" text="非常同意同意一般不同意非常不同意" score="1"/>
+</RadioBox>
+<RadioBox code="02" title="3.我担心长期失眠会影响我的健康问题。" desc="3.我担心长期失眠会影响我的健康问题。">
+<Option code="00item3" text="非常同意同意一般不同意非常不同意" score="1"/>
+</RadioBox>
+<RadioBox code="03" title="4.我担心自己失去控制睡眠的能力。" desc="4.我担心自己失去控制睡眠的能力。">
+<Option code="00item4" text="非常同意同意一般不同意非常不同意" score="1"/>
+</RadioBox>
+<RadioBox code="04" title="5.当前一晚睡得不好，我知道隔天的活动一定会受到影响" desc="5.当前一晚睡得不好，我知道隔天的活动一定会受到影响">
+<Option code="00item5" text="非常同意同意一般不同意非常不同意" score="1"/>
+</RadioBox>
+<RadioBox code="05" title="6.为了保持白天清醒的工作状态，我认为比较好的方式是吃助眠药物，而不是让自己一整晚睡不好" desc="6.为了保持白天清醒的工作状态，我认为比较好的方式是吃助眠药物，而不是让自己一整晚睡不好">
+<Option code="00item6" text="非常同意同意一般不同意非常不同意" score="1"/>
+</RadioBox>
+<RadioBox code="06" title="7.如果我在白天感到焦躁、抑郁、焦虑，大部分是因为前一晚没睡好" desc="7.如果我在白天感到焦躁、抑郁、焦虑，大部分是因为前一晚没睡好">
+<Option code="00item7" text="非常同意同意一般不同意非常不同意" score="1"/>
+</RadioBox>
+<RadioBox code="07" title="8.如果某个晚上我睡的不好，我知道整个星期的睡眠时间就会被打乱" desc="8.如果某个晚上我睡的不好，我知道整个星期的睡眠时间就会被打乱">
+<Option code="00item8" text="非常同意同意一般不同意非常不同意" score="1"/>
+</RadioBox>
+<RadioBox code="08" title="9.如果晚上没有适当的睡眠，隔天我简直没办法做事情" desc="9.如果晚上没有适当的睡眠，隔天我简直没办法做事情">
+<Option code="00item9" text="非常同意同意一般不同意非常不同意" score="1"/>
+</RadioBox>
+<RadioBox code="09" title="10.我始终没法预测自己的睡眠状况是好或是不好" desc="10.我始终没法预测自己的睡眠状况是好或是不好">
+<Option code="00item10" text="非常同意同意一般不同意非常不同意" score="1"/>
+</RadioBox>
+<RadioBox code="10" title="11.我只有一点点能力可以处理睡眠困扰所产生的负面影响" desc="11.我只有一点点能力可以处理睡眠困扰所产生的负面影响">
+<Option code="00item11" text="非常同意同意一般不同意非常不同意" score="1"/>
+</RadioBox>
+<RadioBox code="11" title="12.如果我在白天感到累、没有精力、或是表现不好，通常是因为前一晚睡得不好" desc="12.如果我在白天感到累、没有精力、或是表现不好，通常是因为前一晚睡得不好">
+<Option code="00item12" text="非常同意同意一般不同意非常不同意" score="1"/>
+</RadioBox>
+<RadioBox code="12" title="13.我相信失眠是因为体内化学物质不平衡所致" desc="13.我相信失眠是因为体内化学物质不平衡所致">
+<Option code="00item13" text="非常同意同意一般不同意非常不同意" score="1"/>
+</RadioBox>
+<RadioBox code="13" title="14.我觉得失眠摧毁自己享受生命的能力，而且让我不能随心所欲地做想做的事" desc="14.我觉得失眠摧毁自己享受生命的能力，而且让我不能随心所欲地做想做的事">
+<Option code="00item14" text="非常同意同意一般不同意非常不同意" score="1"/>
+</RadioBox>
+<RadioBox code="14" title="15.药物是解决失眠问题的唯一方式" desc="15.药物是解决失眠问题的唯一方式">
+<Option code="00item15" text="非常同意同意一般不同意非常不同意" score="1"/>
+</RadioBox>
+<RadioBox code="15" title="16.如果我前一夜无法入眠，隔天会逃避或取消自己应该做的事" desc="16.如果我前一夜无法入眠，隔天会逃避或取消自己应该做的事">
+<Option code="00item16" text="非常同意同意一般不同意非常不同意" score="1"/>
+</RadioBox>
+</Group>
+</Template>

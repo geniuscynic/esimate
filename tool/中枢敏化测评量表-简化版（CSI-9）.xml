@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="中枢敏化测评量表-简化版（CSI-9）" title="中枢敏化测评量表-简化版（CSI-9）">
+<Group>
+<RadioBox code="00" title="1.从梦中醒来后感觉疲惫且没精神" desc="1.从梦中醒来后感觉疲惫且没精神">
+<Option code="00item1" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="01" title="2.感觉肌肉僵硬且疼痛" desc="2.感觉肌肉僵硬且疼痛">
+<Option code="00item2" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="02" title="3.感觉浑身疼痛" desc="3.感觉浑身疼痛">
+<Option code="00item9" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="03" title="4.有头痛" desc="4.有头痛">
+<Option code="00item10" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="04" title="5.睡不好觉 " desc="5.睡不好觉 ">
+<Option code="00item12" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="05" title="6.很难集中注意力" desc="6.很难集中注意力">
+<Option code="00item13" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="06" title="7.压力使我的身体症状恶化" desc="7.压力使我的身体症状恶化">
+<Option code="00item15" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="07" title="8.颈和肩部肌肉紧张" desc="8.颈和肩部肌肉紧张">
+<Option code="00item18" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+<RadioBox code="08" title="9.记性差" desc="9.记性差">
+<Option code="00item23" text="从不很少有时经常总是" score="0"/>
+</RadioBox>
+</Group>
+</Template>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="睡眠状况自评量表（SRSS）" title="睡眠状况自评量表（SRSS）">
+<Group>
+<RadioBox code="00" title="1.您觉得平时睡眠足够吗?" desc="1.您觉得平时睡眠足够吗?">
+<Option code="00item1" text="睡眠过多了睡眠正好睡眠欠一些睡眠不够睡眠时间远远不够" score="1"/>
+</RadioBox>
+<RadioBox code="01" title="2.您在睡眠后是否已觉得充分休息过了?" desc="2.您在睡眠后是否已觉得充分休息过了?">
+<Option code="00item2" text="觉得充分休息过了觉得休息过了觉得休息了一点不觉得休息过了觉得一点儿也没休息" score="1"/>
+</RadioBox>
+<RadioBox code="02" title="3.您晚上已睡过觉，白天是否打瞌睡?" desc="3.您晚上已睡过觉，白天是否打瞌睡?">
+<Option code="00item3" text="没有(0～5 天)很少(6～12 天)有时(13～18 天)经常(19～24 天)总是(25～31 天)" score="1"/>
+</RadioBox>
+<RadioBox code="03" title="4.您平均每个晚上大约能睡几小时?" desc="4.您平均每个晚上大约能睡几小时?">
+<Option code="00item4" text="≥9 小时7～8 小时5～6 小时3～4 小时1～2 小时" score="1"/>
+</RadioBox>
+<RadioBox code="04" title="5.您是否有入睡困难?" desc="5.您是否有入睡困难?">
+<Option code="00item5" text="0～5 天很少(6～12 天)有时(13～18 天)经常(19～24 天)总是(25～31 天)" score="1"/>
+</RadioBox>
+<RadioBox code="05" title="6.您入睡后中间是否易醒?" desc="6.您入睡后中间是否易醒?">
+<Option code="00item6" text="0～5 天很少(6～12 天)有时(13～18 天)经常(19～24 天)总是(25～31 天)" score="1"/>
+</RadioBox>
+<RadioBox code="06" title="7.您在醒后是否难于再入睡?" desc="7.您在醒后是否难于再入睡?">
+<Option code="00item7" text="0～5 天很少(6～12 天)有时(13～18 天)经常(19～24 天)总是(25～31 天)" score="1"/>
+</RadioBox>
+<RadioBox code="07" title="8.您是否多梦或常被恶梦惊醒?" desc="8.您是否多梦或常被恶梦惊醒?">
+<Option code="00item8" text="0～5 天很少(6～12 天)有时(13～18 天)经常(19～24 天)总是(25～31 天)" score="1"/>
+</RadioBox>
+<RadioBox code="08" title="9.为了睡眠，您是否吃安眠药?" desc="9.为了睡眠，您是否吃安眠药?">
+<Option code="00item9" text="0～5 天很少(6～12 天)有时(13～18 天)经常(19～24 天)总是(25～31 天)" score="1"/>
+</RadioBox>
+<RadioBox code="09" title="10.您失眠后心情(心境)如何?" desc="10.您失眠后心情(心境)如何?">
+<Option code="00item10" text="无不适无所谓有时心烦、急躁心慌、气短乏力、没精神、做事效率低" score="1"/>
+</RadioBox>
+</Group>
+</Template>

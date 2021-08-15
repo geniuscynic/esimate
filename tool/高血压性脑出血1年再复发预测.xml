@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="高血压性脑出血1年再复发预测" title="高血压性脑出血1年再复发预测">
+<Group>
+<RadioBox code="00" title="年龄 " desc="年龄 ">
+<Option code="00item1" text="&gt;=60岁&lt;60岁" score="4"/>
+</RadioBox>
+<RadioBox code="01" title="入院时血压的级别" desc="入院时血压的级别">
+<Option code="00item2" text="三级高血压三级高血压以下" score="6"/>
+</RadioBox>
+<RadioBox code="02" title="入院时GCS评分" desc="入院时GCS评分">
+<Option code="00item3" text="9-12分9分以下" score="5"/>
+</RadioBox>
+<RadioBox code="03" title="出院时GCS评分" desc="出院时GCS评分">
+<Option code="00item4" text="3-8分3分以下" score="10"/>
+</RadioBox>
+<RadioBox code="04" title="缺血性卒中史" desc="缺血性卒中史">
+<Option code="00item5" text="有无" score="5"/>
+</RadioBox>
+<RadioBox code="05" title="吸烟史" desc="吸烟史">
+<Option code="00item6" text="有无" score="5"/>
+</RadioBox>
+<RadioBox code="06" title="酗酒史" desc="酗酒史">
+<Option code="00item7" text="有无" score="5"/>
+</RadioBox>
+<RadioBox code="07" title="血清同型半胱氨酸水平" desc="血清同型半胱氨酸水平">
+<Option code="00item8" text="&gt;=10 umol/L&lt;10 umol/L" score="4"/>
+</RadioBox>
+</Group>
+</Template>

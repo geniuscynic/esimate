@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="蛛网膜下腔出血后不良事件和功能结局预测（HATCH得分）" title="蛛网膜下腔出血后不良事件和功能结局预测（HATCH得分）">
+<Group>
+<RadioBox code="00" title="1.蛛网膜下腔出血情况" desc="1.蛛网膜下腔出血情况">
+<Option code="00item1" text="无可见的出血10-15mm&gt;15mm再出血事件" score="1"/>
+</RadioBox>
+<RadioBox code="01" title="2.年龄(岁)" desc="2.年龄(岁)">
+<Option code="00item3" text="&lt;=60岁&gt;60岁" score="0"/>
+</RadioBox>
+<RadioBox code="02" title="3.是否采用夹闭治疗" desc="3.是否采用夹闭治疗">
+<Option code="00item4" text="是否" score="2"/>
+</RadioBox>
+<RadioBox code="03" title="4.WFNS-SAH分级" desc="4.WFNS-SAH分级">
+<Option code="00item5" text="1-2级3-4级5级" score="0"/>
+</RadioBox>
+<RadioBox code="04" title="5.脑积水" desc="5.脑积水">
+<Option code="00item6" text="有无" score="2"/>
+</RadioBox>
+</Group>
+</Template>

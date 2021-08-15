@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="缺血性卒中患者早期预后评估(S-SMART评分)" title="缺血性卒中患者早期预后评估(S-SMART评分)">
+<Group>
+<RadioBox code="00" title=" 1.入院时NIHSS评分" desc=" 1.入院时NIHSS评分">
+<Option code="00item1" text="0-7分8-13分&gt;=14分" score="12"/>
+</RadioBox>
+<RadioBox code="01" title="2.性别 " desc="2.性别 ">
+<Option code="00item2" text="男性女性" score="2"/>
+</RadioBox>
+<RadioBox code="02" title="3.卒中的机制 " desc="3.卒中的机制 ">
+<Option code="00item3" text="小血管梗死(SVO)心脏血栓(CE)其它原因" score="2"/>
+</RadioBox>
+<RadioBox code="03" title="4.年龄<80岁" desc="4.年龄<80岁">
+<Option code="00item4" text="是否" score="4"/>
+</RadioBox>
+<RadioBox code="04" title="5.卒中前mRS=0" desc="5.卒中前mRS=0">
+<Option code="00item5" text="是否" score="4"/>
+</RadioBox>
+<RadioBox code="05" title="6.溶栓或取栓治疗了吗？" desc="6.溶栓或取栓治疗了吗？">
+<Option code="00item6" text="没有仅仅静脉溶栓仅仅动脉溶栓静脉溶栓与动脉溶栓联合" score="0"/>
+</RadioBox>
+</Group>
+</Template>

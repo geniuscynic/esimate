@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="共同决策问卷医生版（SDM-Q-Doc）" title="共同决策问卷医生版（SDM-Q-Doc）">
+<Group>
+<RadioBox code="00" title="1. 我向患者说得很清楚，必须做出一个决定" desc="1. 我向患者说得很清楚，必须做出一个决定">
+<Option code="00item1" text="完全不同意基本不同意有点不同意有点同意基本同意完全同意" score="0"/>
+</RadioBox>
+<RadioBox code="01" title="2. 我想清楚地了解患者参与决策的确切方式" desc="2. 我想清楚地了解患者参与决策的确切方式">
+<Option code="00item2" text="完全不同意基本不同意有点不同意有点同意基本同意完全同意" score="0"/>
+</RadioBox>
+<RadioBox code="02" title="3. 我告知了患者，针对他（或她）的情况，可供选择的不同治疗方案" desc="3. 我告知了患者，针对他（或她）的情况，可供选择的不同治疗方案">
+<Option code="00item3" text="完全不同意基本不同意有点不同意有点同意基本同意完全同意" score="0"/>
+</RadioBox>
+<RadioBox code="03" title="4.我向患者准确地解释了不同治疗方案的利与弊" desc="4.我向患者准确地解释了不同治疗方案的利与弊">
+<Option code="00item4" text="完全不同意基本不同意有点不同意有点同意基本同意完全同意" score="0"/>
+</RadioBox>
+<RadioBox code="04" title="5.我帮助我的患者理解了所有的相关信息" desc="5.我帮助我的患者理解了所有的相关信息">
+<Option code="00item5" text="完全不同意基本不同意有点不同意有点同意基本同意完全同意" score="0"/>
+</RadioBox>
+<RadioBox code="05" title="6.我询问过患者，什么是他（或她）最愿意选择的治疗方案" desc="6.我询问过患者，什么是他（或她）最愿意选择的治疗方案">
+<Option code="00item6" text="完全不同意基本不同意有点不同意有点同意基本同意完全同意" score="0"/>
+</RadioBox>
+<RadioBox code="06" title="7.我和我的患者全面权衡了不同治疗方案。" desc="7.我和我的患者全面权衡了不同治疗方案。">
+<Option code="00item7" text="完全不同意基本不同意有点不同意有点同意基本同意完全同意" score="0"/>
+</RadioBox>
+<RadioBox code="07" title="8.我和我的患者一起选择了治疗方案" desc="8.我和我的患者一起选择了治疗方案">
+<Option code="00item8" text="完全不同意基本不同意有点不同意有点同意基本同意完全同意" score="0"/>
+</RadioBox>
+<RadioBox code="08" title="9.关于后续的治疗安排，我和我的患者已达成共识" desc="9.关于后续的治疗安排，我和我的患者已达成共识">
+<Option code="00item9" text="完全不同意基本不同意有点不同意有点同意基本同意完全同意" score="0"/>
+</RadioBox>
+<Text code="09" title="10.请问当前这位病人就诊的原因是什么（例如：有什么不舒服/问题/疾病）？" desc="10.请问当前这位病人就诊的原因是什么（例如：有什么不舒服/问题/疾病）？">
+<Option code="00item10" text="" score=""/>
+</Text>
+<Text code="10" title="11.所做出的决策是什么（例如：何种治疗方案）？" desc="11.所做出的决策是什么（例如：何种治疗方案）？">
+<Option code="00item11" text="" score=""/>
+</Text>
+</Group>
+</Template>

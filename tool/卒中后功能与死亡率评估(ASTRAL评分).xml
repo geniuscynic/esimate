@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="卒中后功能与死亡率评估(ASTRAL评分)" title="卒中后功能与死亡率评估(ASTRAL评分)">
+<Group>
+<Text code="00" title="1. 年龄 " desc="1. 年龄 ">
+<Option code="00item1" text="岁" score=""/>
+</Text>
+<Text code="01" title="2. NIHSS评分 " desc="2. NIHSS评分 ">
+<Option code="00item2" text="" score=""/>
+</Text>
+<RadioBox code="02" title="3.卒中开始到入院时间" desc="3.卒中开始到入院时间">
+<Option code="00item3" text="3小时以内超过3小时" score="0"/>
+</RadioBox>
+<RadioBox code="03" title="4.有卒中相关视觉损害吗" desc="4.有卒中相关视觉损害吗">
+<Option code="00item4" text="无有" score="0"/>
+</RadioBox>
+<RadioBox code="04" title="5.急诊时血糖<3.7mmol/L或>7.3mmol/L" desc="5.急诊时血糖<3.7mmol/L或>7.3mmol/L">
+<Option code="00item5" text="否是" score="0"/>
+</RadioBox>
+<RadioBox code="05" title="6.意识水平有下降吗" desc="6.意识水平有下降吗">
+<Option code="00item6" text="无有" score="0"/>
+</RadioBox>
+</Group>
+</Template>

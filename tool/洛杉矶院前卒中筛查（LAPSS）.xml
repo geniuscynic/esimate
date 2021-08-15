@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="洛杉矶院前卒中筛查（LAPSS）" title="洛杉矶院前卒中筛查（LAPSS）">
+<Group>
+<RadioBox code="00" title="1. 年龄大于45岁" desc="1. 年龄大于45岁">
+<Option code="00item1" text="是不详否" score="1"/>
+</RadioBox>
+<RadioBox code="01" title="2.无痫性发作或癫痫病史" desc="2.无痫性发作或癫痫病史">
+<Option code="00item2" text="是不详否" score="1"/>
+</RadioBox>
+<RadioBox code="02" title="3.症状持续时间小于24小时" desc="3.症状持续时间小于24小时">
+<Option code="00item3" text="是不详否" score="1"/>
+</RadioBox>
+<RadioBox code="03" title="4.发病前患者无卧床或依赖轮椅" desc="4.发病前患者无卧床或依赖轮椅">
+<Option code="00item4" text="是不详否" score="1"/>
+</RadioBox>
+<RadioBox code="04" title="5.血糖在60-400mg/dL（3.3-22.2 mmol/L)之间" desc="5.血糖在60-400mg/dL（3.3-22.2 mmol/L)之间">
+<Option code="00item5" text="是不详否" score="1"/>
+</RadioBox>
+<RadioBox code="05" title="6.根据以下三项查体，患者有明显的单侧力弱（包括两侧面部表情，左右侧握力，左右侧臂力）" desc="6.根据以下三项查体，患者有明显的单侧力弱（包括两侧面部表情，左右侧握力，左右侧臂力）">
+<Option code="00item6" text="是不详否" score="1"/>
+</RadioBox>
+</Group>
+</Template>

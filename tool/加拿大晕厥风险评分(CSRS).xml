@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="加拿大晕厥风险评分(CSRS)" title="加拿大晕厥风险评分(CSRS)">
+<Group>
+<RadioBox code="00" title="容易血管迷走性晕厥" desc="容易血管迷走性晕厥">
+<Option code="00item1" text="是否" score="-1"/>
+</RadioBox>
+<RadioBox code="01" title="心脏病史" desc="心脏病史">
+<Option code="00item2" text="无有" score="0"/>
+</RadioBox>
+<RadioBox code="02" title="收缩压任何时候出现<90mmHg或>180mmHg" desc="收缩压任何时候出现<90mmHg或>180mmHg">
+<Option code="00item3" text="否是" score="0"/>
+</RadioBox>
+<RadioBox code="03" title="血清Troponin水平升高" desc="血清Troponin水平升高">
+<Option code="00item4" text="否是" score="0"/>
+</RadioBox>
+<RadioBox code="04" title="异常QRS轴(<-30°或>100°)" desc="异常QRS轴(<-30°或>100°)">
+<Option code="00item5" text="否是" score="0"/>
+</RadioBox>
+<RadioBox code="05" title="QRS间期>130 ms " desc="QRS间期>130 ms ">
+<Option code="00item6" text="否是" score="0"/>
+</RadioBox>
+<RadioBox code="06" title="矫正后QT间期>480ms" desc="矫正后QT间期>480ms">
+<Option code="00item7" text="否是" score="0"/>
+</RadioBox>
+<RadioBox code="07" title="急诊室诊断为迷走神经晕厥" desc="急诊室诊断为迷走神经晕厥">
+<Option code="00item8" text="否是" score="0"/>
+</RadioBox>
+<RadioBox code="08" title="急诊室诊断为心脏晕厥" desc="急诊室诊断为心脏晕厥">
+<Option code="00item9" text="否是" score="0"/>
+</RadioBox>
+</Group>
+</Template>

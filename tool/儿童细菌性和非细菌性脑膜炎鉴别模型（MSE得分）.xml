@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="儿童细菌性和非细菌性脑膜炎鉴别模型（MSE得分）" title="儿童细菌性和非细菌性脑膜炎鉴别模型（MSE得分）">
+<Group>
+<RadioBox code="00" title="1.血清降钙素原（PCT）>1.2 ng/mL" desc="1.血清降钙素原（PCT）>1.2 ng/mL">
+<Option code="00item1" text="是否" score="3"/>
+</RadioBox>
+<RadioBox code="01" title="2.脑脊液（CSF）蛋白>80 mg/dL" desc="2.脑脊液（CSF）蛋白>80 mg/dL">
+<Option code="00item2" text="是否" score="2"/>
+</RadioBox>
+<RadioBox code="02" title="3.脑脊液（CSF）绝对中性粒细胞数>1000个/mm3" desc="3.脑脊液（CSF）绝对中性粒细胞数>1000个/mm3">
+<Option code="00item3" text="是否" score="1"/>
+</RadioBox>
+<RadioBox code="03" title="4.血清C反应蛋白>40 mg/L" desc="4.血清C反应蛋白>40 mg/L">
+<Option code="00item4" text="是否" score="1"/>
+</RadioBox>
+</Group>
+</Template>

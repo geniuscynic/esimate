@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="全面无反应性量表(FOUR)" title="全面无反应性量表(FOUR)">
+<Group>
+<RadioBox code="00" title="眼部反应(E)" desc="眼部反应(E)">
+<Option code="00item1" text="眼睑张开或被张开,且眼球跟随物体移动,或随指令眨眼眼睑张开但眼球不跟随移动眼睑闭合但大声呼唤时睁眼眼睑闭合但疼痛刺激时睁眼疼痛刺激时仍保持眼睑闭合" score="4"/>
+</RadioBox>
+<RadioBox code="01" title="运动反应(M)" desc="运动反应(M)">
+<Option code="00item2" text="能完成竖拇指、握拳、V字手势指令疼痛刺激时能定位疼痛刺激时上肢屈曲疼痛刺激时上肢伸直疼痛刺激时无反应或全身呈肌阵挛状态" score="4"/>
+</RadioBox>
+<RadioBox code="02" title="脑干反射(B)" desc="脑干反射(B)">
+<Option code="00item3" text="瞳孔和角膜反射灵敏一侧瞳孔放大和固定瞳孔或角膜反射其中一项消失瞳孔和角膜反射均消失瞳孔反射、角膜反射和咳嗽反射均消失" score="4"/>
+</RadioBox>
+<RadioBox code="03" title="呼吸(R)" desc="呼吸(R)">
+<Option code="00item4" text="无气管插管,呼吸节律规则无气管插管,潮式呼吸无气管插管, 呼吸不规则呼吸频率大于机械通气频率呼吸机控制呼吸或呼吸暂停" score="4"/>
+</RadioBox>
+</Group>
+</Template>

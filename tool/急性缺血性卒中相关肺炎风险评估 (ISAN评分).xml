@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="评估急性缺血性卒中相关肺炎风险 (ISAN评分)" title="评估急性缺血性卒中相关肺炎风险 (ISAN评分)">
+<Group>
+<RadioBox code="00" title="年龄" desc="年龄">
+<Option code="00age" text="&lt; 60 岁60-69 岁70-79 岁80-89 岁&gt;=90 岁" score="0"/>
+</RadioBox>
+<RadioBox code="01" title="性别" desc="性别">
+<Option code="00gcs" text="男女" score="1"/>
+</RadioBox>
+<RadioBox code="02" title="入院NIHSS评分" desc="入院NIHSS评分">
+<Option code="00NIHSS" text="0-45-1516-20≥21" score="0"/>
+</RadioBox>
+<RadioBox code="03" title="卒中前mRS" desc="卒中前mRS">
+<Option code="00mRS" text="独立不独立" score="0"/>
+</RadioBox>
+</Group>
+</Template>

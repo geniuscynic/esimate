@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="新奥尔良头部创伤规则" title="新奥尔良头部创伤规则">
+<Group>
+<CheckBox code="00" title="头痛?" desc="头痛?">
+<Option code="00ha" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="01" title="呕吐?" desc="呕吐?">
+<Option code="00vomiting" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="02" title="年龄> 60?" desc="年龄> 60?">
+<Option code="00age" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="03" title="酒精或药物中毒?" desc="酒精或药物中毒?">
+<Option code="00intox" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="04" title="持续型顺行性遗忘（短时记忆障碍）?" desc="持续型顺行性遗忘（短时记忆障碍）?">
+<Option code="00amnesia" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="05" title="锁骨明显创伤?" desc="锁骨明显创伤?">
+<Option code="00trauma" text="是" score="1"/>
+</CheckBox>
+<CheckBox code="06" title="发作?" desc="发作?">
+<Option code="00sz" text="是" score="1"/>
+</CheckBox>
+<button code="07" title="以上全无" desc="以上全无">
+<Option code="00noneofthese" text="" score="全不选"/>
+</button>
+</Group>
+</Template>

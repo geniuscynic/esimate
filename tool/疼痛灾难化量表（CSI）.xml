@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="疼痛灾难化量表（CSI）" title="疼痛灾难化量表（CSI）">
+<Group>
+<RadioBox code="00" title="1.我总是如此为疼痛会不会停止而忧心忡忡" desc="1.我总是如此为疼痛会不会停止而忧心忡忡">
+<Option code="00item1" text="从来没有偶尔适度的很多时候总是如此" score="0"/>
+</RadioBox>
+<RadioBox code="01" title="2.我感觉自己撑不下去了" desc="2.我感觉自己撑不下去了">
+<Option code="00item2" text="从来没有偶尔适度的很多时候总是如此" score="0"/>
+</RadioBox>
+<RadioBox code="02" title="3.我感觉太难熬了，我想不可能好转了" desc="3.我感觉太难熬了，我想不可能好转了">
+<Option code="00item3" text="从来没有偶尔适度的很多时候总是如此" score="0"/>
+</RadioBox>
+<RadioBox code="03" title="4.非常疼痛，我感觉受不了" desc="4.非常疼痛，我感觉受不了">
+<Option code="00item4" text="从来没有偶尔适度的很多时候总是如此" score="0"/>
+</RadioBox>
+<RadioBox code="04" title="5.我感觉自己再也无法忍受这种痛苦了 " desc="5.我感觉自己再也无法忍受这种痛苦了 ">
+<Option code="00item5" text="从来没有偶尔适度的很多时候总是如此" score="4"/>
+</RadioBox>
+<RadioBox code="05" title="6.我害怕疼痛会越来越厉害" desc="6.我害怕疼痛会越来越厉害">
+<Option code="00item6" text="从来没有偶尔适度的很多时候总是如此" score="0"/>
+</RadioBox>
+<RadioBox code="06" title="7.我不停地回想另一些疼痛的经历" desc="7.我不停地回想另一些疼痛的经历">
+<Option code="00item7" text="从来没有偶尔适度的很多时候总是如此" score="0"/>
+</RadioBox>
+<RadioBox code="07" title="8.我急切希望疼痛消失 " desc="8.我急切希望疼痛消失 ">
+<Option code="00item8" text="从来没有偶尔适度的很多时候总是如此" score="0"/>
+</RadioBox>
+<RadioBox code="08" title="9.我似乎无法将疼痛驱逐出脑海" desc="9.我似乎无法将疼痛驱逐出脑海">
+<Option code="00item9" text="从来没有偶尔适度的很多时候总是如此" score="0"/>
+</RadioBox>
+<RadioBox code="09" title="10.我忍不住的想:这可真是疼啊!" desc="10.我忍不住的想:这可真是疼啊!">
+<Option code="00item10" text="从来没有偶尔适度的很多时候总是如此" score="0"/>
+</RadioBox>
+<RadioBox code="10" title="11.我一直在想我多么希望疼痛彻底消失 " desc="11.我一直在想我多么希望疼痛彻底消失 ">
+<Option code="00item11" text="从来没有偶尔适度的很多时候总是如此" score="0"/>
+</RadioBox>
+<RadioBox code="11" title="12.我没有任何办法减轻痛楚 " desc="12.我没有任何办法减轻痛楚 ">
+<Option code="00item12" text="从来没有偶尔适度的很多时候总是如此" score="0"/>
+</RadioBox>
+<RadioBox code="12" title="13.我怀疑这下自己要出大问题了" desc="13.我怀疑这下自己要出大问题了">
+<Option code="00item13" text="从来没有偶尔适度的很多时候总是如此" score="0"/>
+</RadioBox>
+</Group>
+</Template>
