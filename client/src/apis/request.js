@@ -14,7 +14,7 @@ const service = axios.create({
 
 // 添加响应拦截器
 service.interceptors.response.use(function(response) {
-    console.log("error1", response)
+    //console.log("error1", response)
         // 对响应数据做点什么
     return response
 }, function(error) {

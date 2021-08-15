@@ -53,4 +53,13 @@ interface EstimateItemService {
      */
     fun listEstimate() : List<EstimateItemListVo>
 
+    /**
+     * @Description: 初始化可评分的量表
+     * @Param:
+     * @return:
+     * @Author: zjw
+     * @Date: 2021/8/15
+     */
+    fun initEstimateTemplate(): List<EstimateItemListVo>
+
 }

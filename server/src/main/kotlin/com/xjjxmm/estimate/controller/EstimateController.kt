@@ -86,8 +86,28 @@ class EstimateController {
         return estimateItemService.findByPatientId(patientId)
     }
 
+    /**
+     * @Description: 初始化量表
+     * @Param:
+     * @return:
+     * @Author: zjw
+     * @Date: 2021/8/15
+     */
+    @GetMapping("init")
+    fun initEstimateTemplate(): List<EstimateItemListVo> {
+        return estimateItemService.initEstimateTemplate()
+    }
+
+
+    /**
+     * @Description: 初始化量表
+     * @Param:
+     * @return:
+     * @Author: zjw
+     * @Date: 2021/8/15
+     */
     @GetMapping("list")
-    fun listEstimate(): List<EstimateItemListVo> {
+    fun listEstimateTemplate(): List<EstimateItemListVo> {
         return estimateItemService.listEstimate()
     }
 }

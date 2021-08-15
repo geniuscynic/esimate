@@ -16,8 +16,7 @@ export default {
   name: "organization",
   data() {
     return {
-      data: {},
-      code: "abcd2",
+      data: {}
     };
   },
   components:{
@@ -28,19 +27,21 @@ export default {
     this.onLoad();
   },
   methods: {
-    onLoad() {
+    async onLoad() {
+      let code = this.$route.params.code;
       //let _this = this;
-      api
-        .GetEsimate(this.code)
-        .then((res) => {
-          this.data = res.data;
+      let res = await api.GetEsimate(code);
+       this.data = res.data;
+      console.log(this.data);
+        // .then((res) => {
+        //   this.data = res.data;
 
-          console.log(this.data);
-        })
-        .catch((ex) => {
-          console.log(ex);
-          Toast.clear();
-        });
+        //   console.log(this.data);
+        // })
+        // .catch((ex) => {
+        //   console.log(ex);
+        //   Toast.clear();
+        // });
     },
     save(form) {
       console.log(form);

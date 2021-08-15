@@ -83,7 +83,7 @@ const routes = [{
     },
     {
         name: 'esimateAdd',
-        path: '/esimate_add',
+        path: '/esimate_add/:code',
         component: () =>
             import ('@/pages/esimate/add'),
         meta: {

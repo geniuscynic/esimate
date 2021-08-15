@@ -1,18 +1,27 @@
 package com.xjjxmm.estimate.service.impl
 
 import com.alibaba.fastjson.JSON
+import com.baomidou.mybatisplus.core.conditions.Wrapper
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper
+import com.baomidou.mybatisplus.extension.kotlin.KtQueryWrapper
 import com.xjjxmm.estimate.repository.EstimateItemRepository
+import com.xjjxmm.estimate.repository.EstimateTemplateRepository
 import com.xjjxmm.estimate.repository.pojo.EstimateItemEntity
+import com.xjjxmm.estimate.repository.pojo.EstimateTemplateEntity
 import com.xjjxmm.estimate.service.EstimateItemService
 import com.xjjxmm.estimate.service.EstimateTemplateParseHandler
 import com.xjjxmm.estimate.vo.*
+import org.apache.ibatis.jdbc.Null
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.core.io.ClassPathResource
 import org.springframework.core.io.DefaultResourceLoader
 import org.springframework.core.io.Resource
 import org.springframework.core.io.ResourceLoader
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver
 import org.springframework.stereotype.Service
 import utity.MappingKit.mapper
+import java.io.InputStream
 import java.time.LocalDateTime
 import javax.xml.parsers.SAXParserFactory
 
@@ -24,6 +33,8 @@ class EstimateItemServiceImpl : EstimateItemService {
     @Autowired
     lateinit var estimateItemRepository : EstimateItemRepository
 
+    @Autowired
+    lateinit var estimateTemplateRepository : EstimateTemplateRepository
 
     override fun add(estimateItem: AddEstimateItemVo) : Long {
         val entity = estimateItem.mapper<EstimateItemEntity>()
@@ -70,33 +81,79 @@ class EstimateItemServiceImpl : EstimateItemService {
         return entity.mapper()
     }
 
+    override fun initEstimateTemplate(): List<EstimateItemListVo> {
+        val pathResource = PathMatchingResourcePatternResolver().getResources("templates/*.xml")
+
+        estimateTemplateRepository.remove(null)
+        return pathResource.map {res->
+
+            val template = parseXml(res.inputStream)
+
+
+            estimateTemplateRepository.save(EstimateTemplateEntity().apply {
+                code = template.code
+                title = template.title
+                fileName = res.filename
+            })
+
+            EstimateItemListVo().apply {
+                code = template.code
+                title = template.title
+
+
+            }
+
+        }
+    }
+
     override fun listEstimate(): List<EstimateItemListVo> {
-        return listOf(
+        return estimateTemplateRepository.list().map {
             EstimateItemListVo().apply {
-                code = "abcd2"
-                title = "abcd2"
-            },
-            EstimateItemListVo().apply {
-                code = "abcd3"
-                title = "abcd3"
-            },
-        )
+                code = it.code!!
+                title = it.title!!
+            }
+        }
+//        val pathResource = PathMatchingResourcePatternResolver().getResources("templates/*.xml")
+//        return pathResource.map {res->
+//            val template = parseXml(res.inputStream)
+//
+//            EstimateItemListVo().apply {
+//                code = template.code
+//                title = template.title
+//            }
+//        }
+
     }
 
     override fun getTemplate(code:String) : EstimateTemplate {
-        val resourceLoader: ResourceLoader = DefaultResourceLoader()
 
-        val inputFile: Resource = resourceLoader.getResource("templates/$code.xml")
+        return estimateTemplateRepository.ktQuery()
+            .eq(EstimateTemplateEntity::code, code).list()
+            .firstOrNull()?.let {
+                val resourceLoader: ResourceLoader = DefaultResourceLoader()
 
-        if(!inputFile.exists()) {
-            throw Exception("$code.xml 文件不存在")
-        }
+                val inputFile: Resource = resourceLoader.getResource("templates/${it.fileName}")
 
+                if(!inputFile.exists()) {
+                    throw Exception("$code.xml 文件不存在")
+                }
+
+
+
+                return parseXml(inputFile.inputStream)
+            }?: EstimateTemplate()
+
+
+
+
+    }
+
+    private fun parseXml(inputStream : InputStream) : EstimateTemplate {
         val sAXParserFactory = SAXParserFactory.newInstance()
         val sAXParser = sAXParserFactory.newSAXParser()
 
         val handler = EstimateTemplateParseHandler()
-        sAXParser.parse(inputFile.inputStream, handler)
+        sAXParser.parse(inputStream, handler)
 
         return handler.estimateTemplate
 
