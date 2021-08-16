@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="年龄" title="年龄">
+<Group>
+<Text code="00" title="出生月份" desc="出生月份">
+<Option code="00m" text="" score="0"/>
+</Text>
+<Text code="01" title="出生日期" desc="出生日期">
+<Option code="00d" text="" score="0"/>
+</Text>
+<Text code="02" title="出生年份" desc="出生年份">
+<Option code="00y" text="" score="0"/>
+</Text>
+</Group>
+</Template>

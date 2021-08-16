@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="美国国立卫生研究院卒中量表" title="美国国立卫生研究院卒中量表">
+<Group>
+<RadioBox code="00" title="1A: 意识水平(如果因插管治疗或其他治疗，无法全面评价，也必须选择一个；只有在伤害性刺激不能引起患者的（除反射性体位以外的）任何活动时，才能记3分)" desc="1A: 意识水平(如果因插管治疗或其他治疗，无法全面评价，也必须选择一个；只有在伤害性刺激不能引起患者的（除反射性体位以外的）任何活动时，才能记3分)">
+<Option code="001a" text="清醒，反应敏捷" score="0"/>
+<Option code="011a" text="不清醒，轻微刺激能唤醒" score="1"/>
+<Option code="021a" text="不清醒，需要反复刺激才有注意" score="2"/>
+<Option code="031a" text="不清醒/反应迟钝，需要疼痛的刺激才有活动" score="2"/>
+<Option code="041a" text="植物效应或对疼痛无反应" score="3"/>
+</RadioBox>
+<RadioBox code="01" title="1B:询问患者当前月份和年龄" desc="1B:询问患者当前月份和年龄">
+<Option code="001b" text="两个问题回答均正确" score="0"/>
+<Option code="011b" text="一个问题回答正确" score="1"/>
+<Option code="021b" text="两个问题回答均不正确" score="2"/>
+<Option code="031b" text="构音障碍，气管插管，口腔气管创伤，语言障碍" score="1"/>
+<Option code="041b" text="患失语症的" score="2"/>
+</RadioBox>
+<RadioBox code="02" title="1C:让患者睁眼闭眼，然后紧紧握拳（如果有语言障碍/意识混乱者使用另一种指令代替/手势）" desc="1C:让患者睁眼闭眼，然后紧紧握拳（如果有语言障碍/意识混乱者使用另一种指令代替/手势）">
+<Option code="001c" text="两个问题回答均正确" score="0"/>
+<Option code="011c" text="一个问题回答正确" score="1"/>
+<Option code="021c" text="两个问题回答均不正确" score="2"/>
+</RadioBox>
+<RadioBox code="03" title="2：测试水平眼球运动" desc="2：测试水平眼球运动">
+<Option code="002" text="正常眼球运动" score="0"/>
+<Option code="012" text="部分性凝视麻痹：可以克服" score="1"/>
+<Option code="022" text="部分性凝视麻痹：能被眼脑反射克服" score="1"/>
+<Option code="032" text="部分性凝视麻痹：不可以克服" score="2"/>
+</RadioBox>
+<RadioBox code="04" title="3:视野检测" desc="3:视野检测">
+<Option code="003" text="无视野缺损" score="0"/>
+<Option code="013" text="部分偏盲" score="1"/>
+<Option code="023" text="完全偏盲" score="2"/>
+<Option code="033" text="患者全盲" score="3"/>
+<Option code="043" text="双侧偏盲" score="3"/>
+</RadioBox>
+<RadioBox code="05" title="4:面瘫检测（如反应迟钝要求患者示齿，扬眉和闭眼）" desc="4:面瘫检测（如反应迟钝要求患者示齿，扬眉和闭眼）">
+<Option code="004" text="正常对称运动" score="0"/>
+<Option code="014" text="轻微瘫痪（鼻唇沟变平，微笑时不对称）" score="1"/>
+<Option code="024" text="部分瘫痪（下面部完全或几乎完全瘫痪）" score="2"/>
+<Option code="034" text="一侧完全瘫痪（上下面部运动消失）" score="3"/>
+<Option code="044" text="双侧完全瘫痪（上下面部运动消失）" score="3"/>
+</RadioBox>
+<RadioBox code="06" title="5A：左臂运动" desc="5A：左臂运动">
+<Option code="005a" text="坚持10秒钟无漂移" score="0"/>
+<Option code="015a" text="漂移，不碰到床或其他支撑物" score="1"/>
+<Option code="025a" text="漂移，碰到床或其他支撑物" score="2"/>
+<Option code="035a" text="部分抵抗重力" score="2"/>
+<Option code="045a" text="不能抵抗重力" score="3"/>
+<Option code="055a" text="无运动" score="4"/>
+<Option code="065a" text="截肢/关节融合" score="0"/>
+</RadioBox>
+<RadioBox code="07" title="5B：右臂运动" desc="5B：右臂运动">
+<Option code="005b" text="坚持10秒钟无漂移" score="0"/>
+<Option code="015b" text="漂移，不碰到床或其他支撑物" score="1"/>
+<Option code="025b" text="漂移，碰到床或其他支撑物" score="2"/>
+<Option code="035b" text="部分抵抗重力" score="2"/>
+<Option code="045b" text="不能抵抗重力" score="3"/>
+<Option code="055b" text="无运动" score="4"/>
+<Option code="065b" text="截肢/关节融合" score="0"/>
+</RadioBox>
+<RadioBox code="08" title="6A：左腿运动" desc="6A：左腿运动">
+<Option code="006a" text="坚持5秒钟无漂移" score="0"/>
+<Option code="016a" text="漂移，不碰到床" score="1"/>
+<Option code="026a" text="漂移，碰到床或其他支撑物" score="2"/>
+<Option code="036a" text="部分抵抗重力" score="2"/>
+<Option code="046a" text="不能抵抗重力" score="3"/>
+<Option code="056a" text="无运动" score="4"/>
+<Option code="066a" text="截肢/无关节融合" score="0"/>
+</RadioBox>
+<RadioBox code="09" title="6B：右腿运动" desc="6B：右腿运动">
+<Option code="006b" text="坚持5秒钟无漂移" score="0"/>
+<Option code="016b" text="漂移，不碰到床" score="1"/>
+<Option code="026b" text="漂移，碰到床或其他支撑物" score="2"/>
+<Option code="036b" text="部分抵抗重力" score="2"/>
+<Option code="046b" text="不能抵抗重力" score="3"/>
+<Option code="056b" text="无运动" score="4"/>
+<Option code="066b" text="截肢/无关节融合" score="0"/>
+</RadioBox>
+<RadioBox code="10" title="7：肢体共济失调" desc="7：肢体共济失调">
+<Option code="007" text="无共济失调" score="0"/>
+<Option code="017" text="一个肢体有" score="1"/>
+<Option code="027" text="两个肢体有" score="2"/>
+<Option code="037" text="不理解" score="0"/>
+<Option code="047" text="瘫痪" score="0"/>
+<Option code="057" text="截肢/无关节融合" score="0"/>
+</RadioBox>
+<RadioBox code="11" title="8：感觉" desc="8：感觉">
+<Option code="008" text="正常，无感觉缺失" score="0"/>
+<Option code="018" text="轻到中度感觉缺失：不尖锐/钝" score="1"/>
+<Option code="028" text="轻到中度感觉缺失：可以感觉到被触碰" score="1"/>
+<Option code="038" text="完全感觉缺失：根本无法感觉到被触碰" score="2"/>
+<Option code="048" text="无反应和四肢瘫痪" score="2"/>
+<Option code="058" text="昏迷/无反应" score="2"/>
+</RadioBox>
+<RadioBox code="12" title="9：最佳语言/失语（让患者看图片说话，读单词，读句子）
+" desc="9：最佳语言/失语（让患者看图片说话，读单词，读句子）
+">
+<Option code="009" text="无失语，正常" score="0"/>
+<Option code="019" text="轻到中度失语：一些明显变化，无明显受限" score="1"/>
+<Option code="029" text="重度失语：破碎的语言表达，听者需要推理，无法识读材料" score="2"/>
+<Option code="039" text="不能说话或完全失语：无言语或听理解能力" score="3"/>
+<Option code="049" text="昏迷/无反应" score="3"/>
+</RadioBox>
+<RadioBox code="13" title="10:构音障碍（读单词）
+" desc="10:构音障碍（读单词）
+">
+<Option code="0010" text="正常" score="0"/>
+<Option code="0110" text="轻到中度：患者至少能含糊得念一些词，虽稍有困难但至少能被理解" score="1"/>
+<Option code="0210" text="重度构音障碍：患者言语含糊以至无法理解，但无失语或与失语不成比例" score="2"/>
+<Option code="0310" text="不能说话或构音不全" score="2"/>
+<Option code="0410" text="气管插管或其他物理障碍" score="0"/>
+</RadioBox>
+<RadioBox code="14" title="11:消退和不注意" desc="11:消退和不注意">
+<Option code="0011" text="无异常" score="0"/>
+<Option code="0111" text="视觉/触觉/听觉/空间觉或自身的不注意" score="1"/>
+<Option code="0211" text="双侧同步刺激时一种感觉形式的消退" score="1"/>
+<Option code="0311" text="严重的偏侧不注意（如不认识自己的手）" score="2"/>
+<Option code="0411" text="一种以上感觉形式的消退" score="2"/>
+</RadioBox>
+</Group>
+</Template>

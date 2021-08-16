@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="CRUSADE出血风险评估" title="CRUSADE出血风险评估">
+<Group>
+<RadioBox code="00" title="基线红细胞压积（%）" desc="基线红细胞压积（%）">
+<Option code="00red" text="&lt; 31" score="9"/>
+<Option code="01red" text="31-33.9" score="7"/>
+<Option code="02red" text="34-36.9" score="3"/>
+<Option code="03red" text="37-39.9" score="2"/>
+<Option code="04red" text="≥ 40" score="0"/>
+</RadioBox>
+<RadioBox code="01" title="肌酐清除率（mL/min）" desc="肌酐清除率（mL/min）">
+<Option code="00ccr" text="≤ 15" score="39"/>
+<Option code="01ccr" text="&gt;15-30" score="35"/>
+<Option code="02ccr" text="&gt;30-60" score="28"/>
+<Option code="03ccr" text="&gt;60-90" score="17"/>
+<Option code="04ccr" text="&gt;90-120" score="7"/>
+<Option code="05ccr" text="&gt;120" score="0"/>
+</RadioBox>
+<RadioBox code="02" title="心率（bpm）" desc="心率（bpm）">
+<Option code="00bpm" text="≤ 70" score="0"/>
+<Option code="01bpm" text="71-80" score="1"/>
+<Option code="02bpm" text="81-90" score="3"/>
+<Option code="03bpm" text="91-100" score="6"/>
+<Option code="04bpm" text="101-110" score="8"/>
+<Option code="05bpm" text="111-120" score="10"/>
+<Option code="06bpm" text="≥120" score="11"/>
+</RadioBox>
+<RadioBox code="03" title="性别" desc="性别">
+<Option code="00gender" text="男性" score="0"/>
+<Option code="01gender" text="女性" score="8"/>
+</RadioBox>
+<CheckBox code="04" title="有CHF征象" desc="有CHF征象">
+<Option code="00chf" text="是" score="7"/>
+</CheckBox>
+<CheckBox code="05" title="既往血管性疾病" desc="既往血管性疾病">
+<Option code="00htn" text="是" score="6"/>
+</CheckBox>
+<CheckBox code="06" title="糖尿病" desc="糖尿病">
+<Option code="00dm" text="是" score="6"/>
+</CheckBox>
+<RadioBox code="07" title="收缩压（mmHg）" desc="收缩压（mmHg）">
+<Option code="00sp" text="≤ 90" score="10"/>
+<Option code="01sp" text="91-100" score="8"/>
+<Option code="02sp" text="101-120" score="5"/>
+<Option code="03sp" text="121-180" score="1"/>
+<Option code="04sp" text="181-200" score="3"/>
+<Option code="05sp" text="≥201" score="5"/>
+</RadioBox>
+</Group>
+</Template>
