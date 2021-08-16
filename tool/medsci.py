@@ -3,20 +3,22 @@ import html
 import os
 from bs4 import BeautifulSoup
 
-baseUrl = "https://m.medsci.cn" #"https://m.medsci.cn/scale/show.do?id="
+baseUrl = "https://m.medsci.cn"  # "https://m.medsci.cn/scale/show.do?id="
 
-headers={
-"Host": "m.medsci.cn",
-"User-Agent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36"
+headers = {
+    "Host": "m.medsci.cn",
+    "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36"
 }
 
-def crawle(url):   
+
+def crawle(url):
     #url=baseUrl + id
-    #print(url)
-    req=requests.get(url=url, headers=headers)
-    html=req.text
-    
+    # print(url)
+    req = requests.get(url=url, headers=headers)
+    html = req.text
+
     return html
+
 
 def parse(htmlcontet):
     result = {}
@@ -28,7 +30,7 @@ def parse(htmlcontet):
 
     title = bs.select_one("#title h2").get_text(strip=True)
 
-    #print(title)
+    # print(title)
 
     result["name"] = title
     result["group"] = []
@@ -39,10 +41,8 @@ def parse(htmlcontet):
         if form.has_attr("class") and "answer" in form["class"]:
             break
 
-
         if len(form.select("td")) != 2:
             continue
-
 
         if len(form.select("td:last-child input")) == 0:
             continue
@@ -54,49 +54,51 @@ def parse(htmlcontet):
             "title": label,
             "option": []
         }
-        
+
         result["group"].append(item)
-        #print(label)
-        fields = form.select("td:last-child")
+        # print(label)
+        fields = form.select("td:last-child label")
+        if len(fields) == 0:
+            fields = form.select("td:last-child")
         for field in fields:
             input = field.select_one("input")
 
-            #print(field)
+            # print(field)
 
             type = input["type"]
             item['type'] = type
-            
-           
+
             val = "0"
             if input.has_attr("value"):
-                val =  input['value']
+                val = input['value']
 
             content = html.escape(field.get_text(strip=True))
-            
+
             itemId = ""
 
             if input.has_attr("id"):
-                itemId = input["id"] 
+                itemId = input["id"]
             elif input.has_attr("name"):
-                itemId = input["name"] 
+                itemId = input["name"]
 
             item["option"].append({
                 "content": content,
-                #"type": type,
+                # "type": type,
                 "value": val,
                 "name": itemId
             })
-            
+
             #print(type, val, content, result)
-        #break
+        # break
     return result
+
 
 def generaeXml(dict):
     xml = '''<?xml version="1.0" encoding="utf-8"?>\n'''
     xml += f'''<Template code="{dict['name']}" title="{dict['name']}">\n'''
     xml += '''<Group>\n'''
 
-    #for item in dict['group']:
+    # for item in dict['group']:
     for i in range(len(dict['group'])):
         item = dict['group'][i]
         type = item['type']
@@ -116,13 +118,13 @@ def generaeXml(dict):
 
         xml += f'''</{type}>\n'''
 
-    
     xml += '''</Group>\n'''
     xml += '''</Template>'''
-   
+
     return xml
-    
-        #return xml
+
+    # return xml
+
 
 def crawleSingle(url):
     fileName = f"{url['name']}.xml"
@@ -131,7 +133,7 @@ def crawleSingle(url):
         return
 
     print(f"开始抓取：{url['name']}")
-    
+
     htmlContent = crawle(url["url"])
     dict = parse(htmlContent)
     if dict == None:
@@ -139,30 +141,34 @@ def crawleSingle(url):
 
     xml = generaeXml(dict)
 
-    f = open(fileName,"w",encoding="utf-8")
+    f = open(fileName, "w", encoding="utf-8")
     f.write(xml)
     f.close()
 
-def crawleList():
-    url=baseUrl + "/scale/list.do?page=9&s_id=17"
+
+def crawleList(id, page):
+    dirs = f"{id}/{page}"
+    if not os.path.exists(dirs):
+        os.makedirs(dirs)
+
+    url = baseUrl + f"/scale/list.do?page={page}&s_id={id}"
     htmlcontet = crawle(url)
 
-    #print(htmlcontet)
+    # print(htmlcontet)
     bs = BeautifulSoup(htmlcontet, 'html.parser')
 
     elements = bs.select("#list_wrap .news_list a")
     for element in elements:
-        #print(element.get_text(strip=True))
+
+        # print(element.get_text(strip=True))
         yield {
-            "name": element.get_text(strip=True).replace("/", "_"),
+            "name": f"{dirs}/" + element.get_text(strip=True).replace("/", "_"),
             "url": baseUrl + element['href']
         }
-    
-    
-for url in crawleList():
 
+
+for url in crawleList("17", "1"):
     crawleSingle(url)
 
 
-
-
+#crawleSingle( { "name": "test.xml", "url": "https://m.medsci.cn/scale/show.do?id=1eae65b" })

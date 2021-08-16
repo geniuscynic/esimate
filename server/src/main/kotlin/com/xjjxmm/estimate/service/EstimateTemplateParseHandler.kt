@@ -19,6 +19,7 @@ class EstimateTemplateParseHandler : DefaultHandler() {
 
     private lateinit var estimateRadioBox: EstimateRadioBox
     private lateinit var estimateCheckBox: EstimateCheckBox
+    private lateinit var estimateText: EstimateText
 
     private lateinit var estimateOptions : MutableList<EstimateOption>
 
@@ -82,6 +83,17 @@ class EstimateTemplateParseHandler : DefaultHandler() {
                 estimateElements.add(estimateCheckBox)
 
                 log.debug("CheckBox:$elementCode, elementTitle: $elementTitle, elementDesc: $elementDesc")
+            }
+            "Text" -> {
+                val elementCode =attributes?.getValue("code")?:""
+                val elementTitle =attributes?.getValue("title")?:""
+                val elementDesc =attributes?.getValue("desc")
+
+                estimateOptions = mutableListOf()
+                estimateText = EstimateText(elementCode, elementTitle, elementDesc, estimateOptions)
+                estimateElements.add(estimateText)
+
+                log.debug("Text:$elementCode, elementTitle: $elementTitle, elementDesc: $elementDesc")
             }
             "Option" -> {
                 val optionCode =attributes?.getValue("code")?:""

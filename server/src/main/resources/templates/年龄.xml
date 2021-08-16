@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Template code="年龄" title="年龄">
+<Template code="age" title="年龄">
 <Group>
 <Text code="00" title="出生月份" desc="出生月份">
 <Option code="00m" text="" score="0"/>

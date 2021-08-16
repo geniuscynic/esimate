@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template code="PSQI" title="匹兹堡睡眠质量指数（PSQI）">
+    <Group>
+        <Text code="00" title="1.近1个月，晚上上床睡觉通常（  ）点钟" desc="1.近1个月，晚上上床睡觉通常（  ）点钟">
+            <Option code="00item1" text="如22，以24小时计时" score="0"/>
+        </Text>
+        <Text code="01" title="2.近1个月，从上床到入睡通常需要（   ）分钟" desc="2.近1个月，从上床到入睡通常需要（   ）分钟">
+            <Option code="00item2" text="" score="0"/>
+        </Text>
+        <Text code="02" title="3.近1个月，通常早上（   ）点起床" desc="3.近1个月，通常早上（   ）点起床">
+            <Option code="00item3" text="" score=""/>
+        </Text>
+        <Text code="03" title="4.近1个月，每夜通常实际睡眠（   ）小时(不等于卧床时间)" desc="4.近1个月，每夜通常实际睡眠（   ）小时(不等于卧床时间)">
+            <Option code="00item4" text="" score=""/>
+        </Text>
+        <RadioBox code="04" title="5a. 近1个月，入睡困难(30分钟内不能入睡)" desc="5a. 近1个月，入睡困难(30分钟内不能入睡)">
+            <Option code="00item5a" text="无" score="0"/>
+            <Option code="01item5a" text="&lt;１次／周" score="1"/>
+            <Option code="02item5a" text="１～２次／周" score="2"/>
+            <Option code="03item5a" text="≥３次／周" score="3"/>
+        </RadioBox>
+        <RadioBox code="05" title="5b 近1个月，夜间易醒或早醒" desc="5b 近1个月，夜间易醒或早醒">
+            <Option code="00item5b" text="无" score="0"/>
+            <Option code="01item5b" text="&lt;１次／周" score="1"/>
+            <Option code="02item5b" text="１～２次／周" score="2"/>
+            <Option code="03item5b" text="≥３次／周" score="3"/>
+        </RadioBox>
+        <RadioBox code="06" title="5c 近1个月，夜间去厕所" desc="5c 近1个月，夜间去厕所">
+            <Option code="00item5c" text="无" score="0"/>
+            <Option code="01item5c" text="&lt;１次／周" score="1"/>
+            <Option code="02item5c" text="１～２次／周" score="2"/>
+            <Option code="03item5c" text="≥３次／周" score="3"/>
+        </RadioBox>
+        <RadioBox code="07" title="5d. 近1个月，呼吸不畅" desc="5d. 近1个月，呼吸不畅">
+            <Option code="00item5d" text="无" score="0"/>
+            <Option code="01item5d" text="&lt;１次／周" score="1"/>
+            <Option code="02item5d" text="１～２次／周" score="2"/>
+            <Option code="03item5d" text="≥３次／周" score="3"/>
+        </RadioBox>
+        <RadioBox code="08" title="5e. 近1个月，咳嗽或鼾声高" desc="5e. 近1个月，咳嗽或鼾声高">
+            <Option code="00item5e" text="无" score="0"/>
+            <Option code="01item5e" text="&lt;１次／周" score="1"/>
+            <Option code="02item5e" text="１～２次／周" score="2"/>
+            <Option code="03item5e" text="≥３次／周" score="3"/>
+        </RadioBox>
+        <RadioBox code="09" title="5f. 近1个月，感觉冷" desc="5f. 近1个月，感觉冷">
+            <Option code="00item5f" text="无" score="0"/>
+            <Option code="01item5f" text="&lt;１次／周" score="1"/>
+            <Option code="02item5f" text="１～２次／周" score="2"/>
+            <Option code="03item5f" text="≥３次／周" score="3"/>
+        </RadioBox>
+        <RadioBox code="10" title="5g. 近1个月，感觉热" desc="5g. 近1个月，感觉热">
+            <Option code="00item5g" text="无" score="0"/>
+            <Option code="01item5g" text="&lt;１次／周" score="1"/>
+            <Option code="02item5g" text="１～２次／周" score="2"/>
+            <Option code="03item5g" text="≥３次／周" score="3"/>
+        </RadioBox>
+        <RadioBox code="11" title="5h. 近1个月，做恶梦 " desc="5h. 近1个月，做恶梦 ">
+            <Option code="00item5h" text="无" score="0"/>
+            <Option code="01item5h" text="&lt;１次／周" score="1"/>
+            <Option code="02item5h" text="１～２次／周" score="2"/>
+            <Option code="03item5h" text="≥３次／周" score="3"/>
+        </RadioBox>
+        <RadioBox code="12" title="5i. 近1个月，疼痛不适" desc="5i. 近1个月，疼痛不适">
+            <Option code="00item5i" text="无" score="0"/>
+            <Option code="01item5i" text="&lt;１次／周" score="1"/>
+            <Option code="02item5i" text="１～２次／周" score="2"/>
+            <Option code="03item5i" text="≥３次／周" score="3"/>
+        </RadioBox>
+        <RadioBox code="13" title="5j. 近1个月，其它影响睡眠的事情" desc="5j. 近1个月，其它影响睡眠的事情">
+            <Option code="00item5j" text="无" score="0"/>
+            <Option code="01item5j" text="&lt;１次／周" score="1"/>
+            <Option code="02item5j" text="１～２次／周" score="2"/>
+            <Option code="03item5j" text="≥３次／周" score="3"/>
+        </RadioBox>
+        <RadioBox code="14" title="6.近1个月，总的来说，您认为自己的睡眠质量" desc="6.近1个月，总的来说，您认为自己的睡眠质量">
+            <Option code="00item6" text="很好" score="0"/>
+            <Option code="01item6" text="较好" score="1"/>
+            <Option code="02item6" text="较差" score="2"/>
+            <Option code="03item6" text="很差" score="3"/>
+        </RadioBox>
+        <RadioBox code="15" title="7. 近1个月，您用药物催眠的情况" desc="7. 近1个月，您用药物催眠的情况">
+            <Option code="00item7" text="无" score="0"/>
+            <Option code="01item7" text="&lt;１次／周" score="1"/>
+            <Option code="02item7" text="１～２次／周" score="2"/>
+            <Option code="03item7" text="≥３次／周" score="3"/>
+        </RadioBox>
+        <RadioBox code="16" title="8. 近1个月，您常感到困倦吗？" desc="8. 近1个月，您常感到困倦吗？">
+            <Option code="00item8" text="无" score="0"/>
+            <Option code="01item8" text="&lt;１次／周" score="1"/>
+            <Option code="02item8" text="１～２次／周" score="2"/>
+            <Option code="03item8" text="≥３次／周" score="3"/>
+        </RadioBox>
+        <RadioBox code="17" title="9.近1个月，您做事情的精力不足吗" desc="9.近1个月，您做事情的精力不足吗">
+            <Option code="00item9" text="没有" score="0"/>
+            <Option code="01item9" text="偶尔有" score="1"/>
+            <Option code="02item9" text="有时有" score="2"/>
+            <Option code="03item9" text="经常有" score="3"/>
+        </RadioBox>
+    </Group>
+</Template>
