@@ -27,7 +27,7 @@
               @click="elements.value = option.code"
             >
               <template #right-icon>
-                <van-radio :name="option.code"  />
+                <van-radio :name="option.code" />
               </template>
             </van-cell>
           </van-cell-group>
@@ -56,6 +56,20 @@
             </van-cell>
           </van-cell-group>
         </van-checkbox-group>
+
+        <van-cell-group
+          :key="'text_' + elements.code"
+          v-if="elements.type == 'Text'"
+        >
+          <van-field
+          autosize 
+            v-for="option in elements.options"
+            :key="option.code"
+            v-model="option.value"
+            label=""
+            :placeholder="option.text | emptyText"
+          />
+        </van-cell-group>
       </template>
     </van-cell-group>
 
@@ -71,49 +85,42 @@
 </style>
 
 <script>
-
 export default {
   name: "estimateComponents",
   props: {
     data: {
-      type: Object
-    }
+      type: Object,
+    },
   },
   data() {
     return {
-       form: {
-         estimatePhase : 0,
-         estimateModule: "",
-         code: '',
-         data: {},
-         
+      form: {
+        estimatePhase: 0,
+        estimateModule: "",
+        code: "",
+        data: {},
       },
     };
   },
-  mounted() {
-    
-  },
+  mounted() {},
   methods: {
-    
     save() {
       //console.log(this.data);
       let result = [];
-      for(let group of this.data.groups) {
-        for(let element of group.elements) {
-          
+      for (let group of this.data.groups) {
+        for (let element of group.elements) {
           let temp = {};
-          temp.code =  element.code;
-         
-          if(Array.isArray(element.value) && element.value.length > 0) {
+          temp.code = element.code;
+
+          if (Array.isArray(element.value) && element.value.length > 0) {
             temp.value = element.value;
 
             result.push(temp);
-          }
-          else if(element.value != ""){
+          } else if (element.value != "") {
             temp.value = [element.value];
 
             result.push(temp);
-          } 
+          }
         }
       }
 
@@ -121,13 +128,12 @@ export default {
       this.form.code = this.data.code;
 
       //console.log(this.form);
-     
+
       this.$emit("onSave", this.form);
-      
     },
     toggle(index) {
       //debugger;
-      this.$refs.checkboxes.find(t=>t.name == index).toggle();
+      this.$refs.checkboxes.find((t) => t.name == index).toggle();
     },
   },
 };
