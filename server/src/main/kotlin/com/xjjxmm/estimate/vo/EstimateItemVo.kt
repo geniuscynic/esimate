@@ -1,7 +1,6 @@
 package com.xjjxmm.estimate.vo
 
-
-
+import com.xjjxmm.estimate.model.EstimateTemplate
 
 
 class SelectedEstimateItem {

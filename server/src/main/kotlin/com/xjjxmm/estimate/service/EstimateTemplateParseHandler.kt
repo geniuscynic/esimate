@@ -1,6 +1,6 @@
 package com.xjjxmm.estimate.service
 
-import com.xjjxmm.estimate.vo.*
+import com.xjjxmm.estimate.model.*
 import org.slf4j.LoggerFactory
 import org.xml.sax.Attributes
 import org.xml.sax.helpers.DefaultHandler
@@ -21,8 +21,16 @@ class EstimateTemplateParseHandler : DefaultHandler() {
     private lateinit var estimateCheckBox: EstimateCheckBox
     private lateinit var estimateText: EstimateText
 
-    private lateinit var estimateOptions : MutableList<EstimateOption>
+    private lateinit var estimateChooseOptions : MutableList<ChooseBoxEstimateOption>
+    private lateinit var estimateTextOptions : MutableList<TextEstimateOption>
 
+    private var isChooseBox = false
+    private var isText = false
+
+    private fun setIsChooseBox(isBox:Boolean) {
+        isChooseBox = isBox
+        isText = !isBox
+    }
 
     override fun startDocument() {
         super.startDocument()
@@ -66,11 +74,11 @@ class EstimateTemplateParseHandler : DefaultHandler() {
                 val elementTitle =attributes?.getValue("title")?:""
                 val elementDesc =attributes?.getValue("desc")
 
-                estimateOptions = mutableListOf()
-                estimateRadioBox = EstimateRadioBox(elementCode, elementTitle, elementDesc, estimateOptions)
+                estimateChooseOptions = mutableListOf()
+                estimateRadioBox = EstimateRadioBox(elementCode, elementTitle, elementDesc, estimateChooseOptions)
                 estimateElements.add(estimateRadioBox)
 
-
+                setIsChooseBox(true)
                 log.debug("RadioBox:$elementCode, elementTitle: $elementTitle, elementDesc: $elementDesc")
             }
             "CheckBox" -> {
@@ -78,10 +86,11 @@ class EstimateTemplateParseHandler : DefaultHandler() {
                 val elementTitle =attributes?.getValue("title")?:""
                 val elementDesc =attributes?.getValue("desc")
 
-                estimateOptions = mutableListOf()
-                estimateCheckBox = EstimateCheckBox(elementCode, elementTitle, elementDesc, estimateOptions)
+                estimateChooseOptions = mutableListOf()
+                estimateCheckBox = EstimateCheckBox(elementCode, elementTitle, elementDesc, estimateChooseOptions)
                 estimateElements.add(estimateCheckBox)
 
+                setIsChooseBox(true)
                 log.debug("CheckBox:$elementCode, elementTitle: $elementTitle, elementDesc: $elementDesc")
             }
             "Text" -> {
@@ -89,10 +98,11 @@ class EstimateTemplateParseHandler : DefaultHandler() {
                 val elementTitle =attributes?.getValue("title")?:""
                 val elementDesc =attributes?.getValue("desc")
 
-                estimateOptions = mutableListOf()
-                estimateText = EstimateText(elementCode, elementTitle, elementDesc, estimateOptions)
+                estimateTextOptions = mutableListOf()
+                estimateText = EstimateText(elementCode, elementTitle, elementDesc, estimateTextOptions)
                 estimateElements.add(estimateText)
 
+                setIsChooseBox(false)
                 log.debug("Text:$elementCode, elementTitle: $elementTitle, elementDesc: $elementDesc")
             }
             "Option" -> {
@@ -100,7 +110,13 @@ class EstimateTemplateParseHandler : DefaultHandler() {
                 val optionTitle =attributes?.getValue("text")?:""
                 val optionScore =attributes?.getValue("score")?:""
 
-                estimateOptions.add(EstimateOption(optionCode, optionTitle, optionScore))
+                if (isChooseBox) {
+                    estimateChooseOptions.add(ChooseBoxEstimateOption(optionCode, optionTitle, optionScore))
+                }
+                else if(isText) {
+                    estimateTextOptions.add(TextEstimateOption(optionCode, optionTitle))
+                }
+
 
                 log.debug("optionCode:$optionCode, optionTitle: $optionTitle, optionScore: $optionScore")
             }
@@ -111,7 +127,7 @@ class EstimateTemplateParseHandler : DefaultHandler() {
         super.characters(ch, start, length)
     }
 
-    override fun endElement(uri: String?, localName: String?, qName: String?) {
+    override fun endElement(uri: String?, localName: String, qName: String) {
         super.endElement(uri, localName, qName)
     }
 
