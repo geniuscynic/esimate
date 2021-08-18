@@ -62,7 +62,7 @@
           v-if="elements.type == 'Text'"
         >
           <van-field
-          autosize 
+            autosize
             v-for="option in elements.options"
             :key="option.code"
             v-model="option.value"
@@ -109,27 +109,52 @@ export default {
       let result = [];
       for (let group of this.data.groups) {
         for (let element of group.elements) {
-          let temp = {};
-          temp.code = element.code;
+          //let temp = {};
+          //temp.code = element.code;
 
-          if (Array.isArray(element.value) && element.value.length > 0) {
-            temp.value = element.value;
-
-            result.push(temp);
-          } else if (element.value != "") {
-            temp.value = [element.value];
-
-            result.push(temp);
+          if (element.type == "RadioButton") {
+            //temp.value = element.value;
+            if (element.value != "") {
+              result.push({
+                code: element.value,
+                value: element.value,
+              });
+            }
+          } else if (element.type == "CheckBox") {
+            //temp.value = element.value;
+            for (let checkValue of element.value) {
+              result.push({
+                code: checkValue,
+                value: checkValue,
+              });
+            }
+          } else if (element.type == "Text") {
+            //temp.value = element.value;
+            for (let option of element.options) {
+              result.push({
+                code: option.code,
+                value: option.value,
+              });
+            }
           }
+          // if (Array.isArray(element.value) && element.value.length > 0) {
+          //   temp.value = element.value;
+
+          //   result.push(temp);
+          // } else if (element.value != "") {
+          //   temp.value = [element.value];
+
+          //   result.push(temp);
+          // }
         }
       }
 
       this.form.data = result;
       this.form.code = this.data.code;
 
-      //console.log(this.form);
+      console.log(this.form);
 
-      this.$emit("onSave", this.form);
+      // this.$emit("onSave", this.form);
     },
     toggle(index) {
       //debugger;
