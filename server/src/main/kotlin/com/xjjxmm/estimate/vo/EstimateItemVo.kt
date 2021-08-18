@@ -5,7 +5,7 @@ import com.xjjxmm.estimate.model.EstimateTemplate
 
 class SelectedEstimateItem {
     lateinit var code: String
-    lateinit var value: List<String>
+    lateinit var value: String
 }
 
 class AddEstimateItemVo {
