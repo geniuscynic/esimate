@@ -26,7 +26,7 @@ data class EstimateItemEntity(
     var estimateModule : String?=null, //卒中， 血透
 
     @TableField(value = "template_code")
-    var code: String?=null,
+    var estimateCode: String?=null,
 
     @TableField(value = "content")
     var content: String?=null,
@@ -43,6 +43,8 @@ data class EstimateItemEntity(
     @TableField(value = "update_User_Id")
     var updateUserId: Long?=null,
 
+    @TableField(exist = false)
+    var estimateTitle: String?=null
     )
 
 /*

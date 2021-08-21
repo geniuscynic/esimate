@@ -154,7 +154,7 @@ export default {
 
       console.log(this.form);
 
-      // this.$emit("onSave", this.form);
+      this.$emit("onSave", this.form);
     },
     toggle(index) {
       //debugger;

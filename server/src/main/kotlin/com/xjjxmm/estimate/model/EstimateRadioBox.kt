@@ -8,13 +8,21 @@ class EstimateRadioBox(code: String, title: String, desc: String? = null, option
     var value = ""
 
     override fun setItems(items : List<SelectedEstimateItem>) {
-        items.firstOrNull  { t->t.code == code }?.value?.firstOrNull()?.let { it ->
-            value = it
-
-            options.firstOrNull { o -> o.code == value }?.let { op ->
-                op.checked = true
+        options.forEach { op ->
+            items.firstOrNull {  it ->
+                it.code == op.code
+            }?.let { se->
+                value = se.code
+                return
             }
         }
+//        items.firstOrNull  { t->t.code == code }?.value?.firstOrNull()?.let { it ->
+//            value = it
+//
+//            options.firstOrNull { o -> o.code == value }?.let { op ->
+//                op.checked = true
+//            }
+//        }
     }
 
 }

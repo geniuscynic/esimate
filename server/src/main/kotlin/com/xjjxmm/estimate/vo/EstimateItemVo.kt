@@ -42,7 +42,7 @@ class PatientEstimateItemListVo {
     //lateinit var code: String
     lateinit var estimateTitle: String
 
-    lateinit var code: String
+    lateinit var estimateCode: String
 
     var estimateScore: Int = 0
     //var content: String?=null,

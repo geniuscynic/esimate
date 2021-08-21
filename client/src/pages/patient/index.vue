@@ -31,9 +31,11 @@
 
 
 <script>
-import { Toast } from "vant";
+//import { Toast } from "vant";
 
 import api from "@/apis";
+
+import { mapMutations } from 'vuex'
 
 export default {
   name: "patient",
@@ -51,10 +53,12 @@ export default {
     //this.onLoad();
   },
   methods: {
-    onLoad() {
-      api
-        .GetPatient()
-        .then((res) => {
+    ...mapMutations([
+      'setPatientId', 
+    ]),
+    async onLoad() {
+      let res = await api.GetPatient();
+        //.then((res) => {
           if (this.refreshing) {
             this.list = [];
             this.refreshing = false;
@@ -66,11 +70,11 @@ export default {
 
           this.list = res.data;
           this.finished = true;
-        })
-        .catch((ex) => {
-          console.log(ex);
-          Toast.clear();
-        });
+        // })
+        // .catch((ex) => {
+        //   console.log(ex);
+        //   Toast.clear();
+        // });
     },
     onRefresh() {
       // 清空列表数据
@@ -85,7 +89,9 @@ export default {
       this.$router.push({ name: "patient_add" }); // -> /user/123
     },
     onCellClick(item) {
-      this.$router.push({ name: "patient_estimate_list", params: { id: item.id } }); // -> /user/123
+      this.setPatientId(item.id);
+      this.$router.push({ name: "estimate" }); 
+      //this.$router.push({ name: "patient_estimate_list", params: { id: item.id } }); 
     },
     caulateGender(gender) {
       if (gender == 1) {

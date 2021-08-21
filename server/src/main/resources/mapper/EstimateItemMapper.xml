@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--MyBatis配置文件-->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xjjxmm.estimate.repository.mapper.EstimateItemMapper">
+
+    <!-- List<Tag> findTagsByArticleId(Long articleId);-->
+    <select id="findByPatientId"  resultType="com.xjjxmm.estimate.repository.pojo.EstimateItemEntity">
+        select ei.*,ei.template_code as estimateCode, et.title as estimateTitle from estimate_item ei
+        join estimate_template et
+        on ei.template_code = et.code
+
+    </select>
+
+
+</mapper>

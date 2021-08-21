@@ -23,26 +23,7 @@ const routes = [{
         path: '*',
         redirect: { name: 'patient' }
     },
-    {
-        path: '/emergency',
-        name: 'Emergency',
-        component: () =>
-            import ('@/pages/Emergency'),
-        meta: {
-            title: '会员中心'
-        }
-    },
-    {
-        path: '/emergency/detail',
-        name: 'detail',
-        component: () =>
-            import ('@/pages/Emergency/detail'),
-        meta: {
-            title: '会员中心'
-        }
-    },
-
-
+    
     {
         name: 'patient',
         path: '/patient',
@@ -50,51 +31,59 @@ const routes = [{
             import ('@/pages/patient'),
         meta: {
             title: '患者管理'
-        }
+        },
+
     },
+
     {
         name: 'patient_add',
         path: '/patient/add',
         component: () =>
-            import ('@/pages/patient/patient_add'),
+            import ('@/pages/patient/add'),
         meta: {
             title: '新增患者'
         }
     },
+
     {
-        name: 'patient_estimate_list',
-        path: '/patient/estimate/:id',
+        name: 'estimate',
+        //path: '/patient/:id/estimate',
+        path: '/estimate',
         component: () =>
-            import ('@/pages/patient/estimate_list'),
+            import ('@/pages/estimate/index'),
         meta: {
             title: '已评分列表'
         }
     },
 
-
+    
     {
-        name: 'esimate',
-        path: '/esimate',
+        name: 'esimate_list',
+        //path: '/patient/:id/esimate/list',
+        path: '/esimate/list',
         component: () =>
-            import ('@/pages/esimate'),
+            import ('@/pages/estimate/list'),
         meta: {
-            title: '首页'
+            title: '所有量表列表'
         }
     },
+
     {
-        name: 'esimateAdd',
-        path: '/esimate_add/:code',
+        name: 'estimate_add',
+        //path: '/patient/:id/estimate/add/:code',
+        path: '/estimate/add/:code',
         component: () =>
-            import ('@/pages/esimate/add'),
+            import ('@/pages/estimate/add'),
         meta: {
             title: '新增'
         }
     },
+
     {
-        name: 'esimateDetail',
-        path: '/esimate/edit',
+        name: 'estimate_edit',
+        path: '/estimate/edit/:id',
         component: () =>
-            import ('@/pages/esimate/edit'),
+            import ('@/pages/estimate/edit'),
         meta: {
             title: '量表详情'
         }

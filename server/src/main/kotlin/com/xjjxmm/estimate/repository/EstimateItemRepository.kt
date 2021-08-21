@@ -8,8 +8,8 @@ import org.springframework.stereotype.Repository
 class EstimateItemRepository : BaseResponse<EstimateItemEntity, EstimateItemMapper>() {
 
     fun findByPatientId(patientId: Long) : List<EstimateItemEntity> {
-
-        return this.ktQuery().eq(EstimateItemEntity::patientId, patientId).list()
+        return this.baseMapper.findByPatientId(patientId)
+        //return this.ktQuery().eq(EstimateItemEntity::patientId, patientId).list()
     }
 
 

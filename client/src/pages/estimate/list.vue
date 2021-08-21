@@ -27,7 +27,7 @@
 
 
 <script>
-import { Toast } from "vant";
+//import { Toast } from "vant";
 
 import api from "@/apis";
 
@@ -35,30 +35,30 @@ export default {
   name: "organization",
   data() {
     return {
-      data: [],
+      data: []
     };
   },
   mounted() {
     this.onLoad();
   },
   methods: {
-    onLoad() {
+    async onLoad() {
       //let _this = this;
-      api
-        .listEstimate()
-        .then((res) => {
-          this.data = res.data;
+      let res = await api.listEstimate()
+      this.data = res.data;
+        // .then((res) => {
+        //   this.data = res.data;
 
-          console.log(this.data);
-        })
-        .catch((ex) => {
-          console.log(ex);
-          Toast.clear();
-        });
+        //   console.log(this.data);
+        // })
+        // .catch((ex) => {
+        //   console.log(ex);
+        //   Toast.clear();
+        // });
     },
     choosed(item) {
       console.log(item.code);
-      this.$router.push({ name: "esimateAdd", params: { code: item.code } }); // -> /user/123
+      this.$router.push({ name: "estimate_add", params: {  code: item.code } }); // -> /user/123
     },
     
   },

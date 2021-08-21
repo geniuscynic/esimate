@@ -62,7 +62,7 @@ class EstimateItemServiceImpl : EstimateItemService {
         val item = entity.mapper<EstimateItemVo>().apply {
 
                 val estmateItems = JSON.parseArray(entity.content, SelectedEstimateItem::class.java)
-                val template = getTemplate(entity?.code!!)
+                val template = getTemplate(entity?.estimateCode!!)
                 template.setItems(estmateItems)
 
                 this.detail = template

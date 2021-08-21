@@ -14,7 +14,7 @@ class EstimateText(override val code: String, val title:String, val desc:String?
         options.forEach {  op->
             items.firstOrNull { it->
                 op.code == it.code
-            }?.value?.firstOrNull()?.let { value->
+            }?.value?.let { value->
                 op.value = value
             }
         }
