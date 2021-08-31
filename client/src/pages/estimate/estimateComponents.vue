@@ -150,7 +150,7 @@ export default {
       }
 
       this.form.data = result;
-      this.form.code = this.data.code;
+      this.form.estimateCode = this.data.code;
 
       console.log(this.form);
 

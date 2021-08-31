@@ -5,7 +5,7 @@ data class Article (
 
      var comment_counts: Int?=null,
 
-     var create_date: Long??=null,
+     var create_date: Long?=null,
 
      var summary: String?=null,
 

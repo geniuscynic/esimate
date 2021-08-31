@@ -10,7 +10,7 @@ class SelectedEstimateItem {
 
 class AddEstimateItemVo {
     var patientId: Long = 0
-    lateinit var code: String
+    lateinit var estimateCode: String
     //lateinit var rfId: String
     var estimatePhase: Int = 0 //1?=null,2?=null,3?=null,4 入院 出院
     lateinit var estimateModule: String //卒中， 血透

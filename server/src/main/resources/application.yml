@@ -11,7 +11,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/estimate?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC
     username: root
-    password: qwqwqw12
+    password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 #mybatis-plus
@@ -29,7 +29,7 @@ mybatis-plus:
 #log
 logging:
   level:
-    com.xjjxmm.helloworld: debug
+    com.xjjxmm.estimate: debug
 
 
 # token 加密密钥

@@ -1,5 +1,6 @@
 package com.xjjxmm.estimate.controller
 
+import com.alibaba.fastjson.JSON
 import com.xjjxmm.estimate.model.EstimateTemplate
 import com.xjjxmm.estimate.service.EstimateItemService
 import com.xjjxmm.estimate.vo.*
@@ -84,7 +85,12 @@ class EstimateController {
      */
     @GetMapping("patient/{patientId}")
     fun findByPatientId(@PathVariable("patientId") patientId: Long): List<PatientEstimateItemListVo> {
-        return estimateItemService.findByPatientId(patientId)
+        val res = estimateItemService.findByPatientId(patientId)
+
+        log.debug("findByPatientId")
+        log.debug(JSON.toJSONString(res))
+
+        return res
     }
 
     /**
